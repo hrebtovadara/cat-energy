@@ -2,13 +2,15 @@
   list-style: none;
   background-color: #f2f2f2;
 }
-
 .type-list__heading {
   font-size: 24px;
   line-height: 37px;
 }
-
+.type-list__text {
+  border-bottom: 1px solid #d9d9d9;
+}
 .type-list__button {
   text-decoration: none;
   line-height: 20px;
+
 }
