@@ -1,0 +1,19 @@
+.main-nav {
+  width: 320px;
+  min-height: 51px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+}

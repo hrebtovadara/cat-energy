@@ -1,14 +1,38 @@
 .site-list {
   list-style: none;
 }
+
 .site-list__item {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $color-line;
 }
+
 .site-list__item:nth-child(1) {
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $color-line;
 }
+
 .site-list__item a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item {
+    border: none;
+    padding-right: 35px;
+  }
+
+  .site-list__item:nth-child(1) {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item a {
+    color: $color-white;
+  }
 }

@@ -1,16 +1,26 @@
+.type-list {
+  padding: 0;
+  margin: 0;
+}
+
 .type-list__item {
   list-style: none;
-  background-color: #f2f2f2;
+  background-color: $color-lightgray;
+  padding: 20px;
+  margin-top: 20px;
 }
+
 .type-list__heading {
   font-size: 24px;
   line-height: 37px;
+  margin: 0;
 }
+
 .type-list__text {
   border-bottom: 1px solid #d9d9d9;
 }
+
 .type-list__button {
   text-decoration: none;
   line-height: 20px;
-
 }

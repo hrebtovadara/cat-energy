@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list__fon-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-list__fon-desktop {
+    display: block;
+    position: absolute;
+    right: -90px;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,27 @@
+body {
+  min-width: 340px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-arial;
+  color: $color-gray;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1440px;
+  }
+}

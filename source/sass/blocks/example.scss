@@ -1,15 +1,22 @@
-.example{
+.example {
   background-color: #f2f2f2;
 }
+
 .example__heading {
   font-size: 36px;
   line-height: 60px;
 }
+
 .example__index {
   font-size: 24px;
   line-height: 24px;
 }
+
 .example__expenses {
   font-size: 14px;
   line-height: 20px;
+}
+
+.example__cat {
+  list-style: none;
 }
