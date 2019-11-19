@@ -1,12 +1,15 @@
 .site-list {
   list-style: none;
 }
+
 .site-list__item {
   border-bottom: 1px solid #e6e6e6;
 }
+
 .site-list__item:nth-child(1) {
   border-top: 1px solid #e6e6e6;
 }
+
 .site-list__item a {
   text-decoration: none;
   font-size: 20px;

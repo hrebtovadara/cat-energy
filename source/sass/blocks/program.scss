@@ -1,14 +1,16 @@
 .program {
-  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
+
 .program__heading {
   color: #ffffff;
   font-size: 36px;
   line-height: 36px;
 }
-.program__slogan{
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+
+.program__slogan {
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
