@@ -1,5 +1,4 @@
 body {
-  min-width: 340px;
   font-size: 14px;
   line-height: 18px;
   font-family: $font-arial;
@@ -11,7 +10,20 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 @media (min-width: $tablet-width) {

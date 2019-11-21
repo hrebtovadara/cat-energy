@@ -7,4 +7,16 @@
   font-weight: normal;
   color: $color-white;
   text-decoration: none;
+  padding: 11px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 27px;
+    width: auto;
+  }
 }

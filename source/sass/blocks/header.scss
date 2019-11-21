@@ -5,16 +5,14 @@
 .header__container {
   display: flex;
   flex-direction: column;
-}
-
-.site-list__fon-desktop {
-  display: none;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .header__container {
     flex-direction: row;
     justify-content: space-between;
+    max-height: 110px;
   }
 }
 
@@ -22,12 +20,5 @@
   .header__container {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .site-list__fon-desktop {
-    display: block;
-    position: absolute;
-    right: -90px;
-    z-index: -1;
   }
 }

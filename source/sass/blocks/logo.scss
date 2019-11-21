@@ -1,4 +1,14 @@
 .logo {
-  text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
+  height: 64px;
+  padding: 22px;
+}
+
+@media (min-width: $desktop-width) {
+  .logo__catalog {
+    font-size: 22px;
+    height: 64px;
+    padding: 22px;
+    color: $color-gray;
+  }
 }
