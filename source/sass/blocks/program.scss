@@ -1,19 +1,82 @@
 .program {
-  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center top;
 }
+
+.program__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .program__heading {
-  color: #ffffff;
-  font-size: 36px;
+  color: $color-white;
   line-height: 36px;
+  text-align: center;
 }
-.program__slogan{
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
+
+.program__slogan {
+  font-family: $font-oswald;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   font-weight: normal;
-  color: #ffffff;
+  color: $color-white;
 }
 
+@media (min-width: $tablet-width) {
+  .program {
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 260px;
+    min-height: 950px;
+  }
 
+  .program__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .program__heading {
+    color: $color-black;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: none;
+    max-width: 426px;
+    text-align: left;
+  }
+
+  .program__slogan {
+    font-size: 20px;
+    color: $color-black;
+    margin-bottom: 50px;
+  }
+
+  .program__image-feed {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    background-image: url("../../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 560px 30px;
+    min-height: 586px;
+  }
+
+  .program__container {
+    padding-left: 80px;
+  }
+}

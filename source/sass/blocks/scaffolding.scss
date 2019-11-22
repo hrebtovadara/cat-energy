@@ -1,0 +1,39 @@
+body {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-arial;
+  color: $color-gray;
+  font-style: normal;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1440px;
+  }
+}

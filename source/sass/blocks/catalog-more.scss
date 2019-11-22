@@ -1,12 +1,14 @@
 .catalog-more {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $color-gray;
 }
+
 .catalog-more__heading {
-  color: #111111;
+  color: $color-black;
 }
+
 .catalog-more__all {
   background-color: #f2f2f2;
-  color: #444444;
+  color: $color-gray;
 }
