@@ -1,3 +1,4 @@
+
 .description__list {
   list-style: none;
   padding: 0;
@@ -13,10 +14,16 @@
   max-width: 200px;
 }
 
+.description__section-title {
+ margin-top: 14px;
+ margin-bottom: 18px;
+}
+
 @media (min-width: $tablet-width) {
   .description__section-title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 74px;
   }
 
   .description__list {
@@ -24,10 +31,11 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .description__item {
-    width: 354px;
+    width: 325px;
     height: 317px;
     display: flex;
     flex-direction: column;
@@ -51,5 +59,9 @@
   .description__item {
     width: 245px;
     height: 230px;
+  }
+
+  .description__section-title {
+    margin-top: 40px;
   }
 }

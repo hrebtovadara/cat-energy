@@ -2,13 +2,50 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 210px;
+  // min-width: 280px;
+  padding-top: 26px;
+  border-bottom: 1px solid $color-line;
+}
+
+.catalog-more img:nth-child(3) {
+  order: -1;
 }
 
 .catalog-more__heading {
   color: $color-black;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 0;
 }
 
 .catalog-more__all {
-  background-color: #f2f2f2;
+  background-color: $color-lightgray;
   color: $color-gray;
+}
+
+.catalog-more__text {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-more {
+    border-bottom: none;
+
+  }
+
+  .catalog-more__image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .catalog-more__heading {
+    font-size: 20px;
+    max-width: 150px;
+    text-align: center;
+  }
 }

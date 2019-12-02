@@ -2,6 +2,7 @@
   width: 320px;
   padding: 0 20px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,8 +15,8 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1440px;
-    padding: 0 110px;
+    width: 1300px;
+    padding: 0 40px;
     margin: 0 auto;
   }
 }

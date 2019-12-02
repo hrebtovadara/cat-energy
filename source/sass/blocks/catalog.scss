@@ -1,15 +1,21 @@
 .catalog__heading {
-  padding: 40px 0;
-  padding-top: 20px;
-  border-bottom: 1px solid $color-line;
-  margin: 0%;
+  padding: 16px 0;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.catalog__table {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog__list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  padding: 0%;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog__image {
@@ -19,6 +25,7 @@
 
 .catalog__container {
   display: flex;
+  margin-bottom: 0px;
 }
 
 .catalog__container div:nth-child(1) {
@@ -26,23 +33,103 @@
 }
 
 .catalog-description__list {
-  width: 100%;
+  font-size: 12px;
+  line-height: 15px;
+  margin-right: 0;
 }
 
 .catalog__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 0;
+  padding-bottom: 24px;
   border-top: 1px solid $color-line;
 }
 
 .catalog__title {
   max-width: 80px;
   font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
 
 .catalog-description__list tr {
   display: flex;
   justify-content: space-between;
-  min-width: 140px;
+}
+
+.catalog__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    justify-content: space-between;
+  }
+
+  .catalog__table {
+    align-content: center;
+  }
+
+  .catalog__title {
+    max-width: 150px;
+    font-size: 20px;
+    margin: 20px auto;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .catalog__heading {
+    font-size: 60px;
+    margin-top: 34px;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .catalog__item {
+    height: 430px;
+    width: 324px;
+    background-color: $color-lightgray;
+    border: none;
+    margin-top: 140px;
+    padding: 35px 36px;
+    padding-top: 142px;
+  }
+
+  .catalog__item:last-child {
+    background-color: $color-white;
+    border: 1px solid $color-tableline;
+    padding-top: 36px;
+  }
+
+  .catalog__image {
+    width: 0px;
+    height: 0px;
+  }
+
+  .catalog-description__list tr {
+    border-bottom: 1px solid $color-tableline;
+    padding: 7px 0;
+  }
+
+  .catalog-description__list  {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+ .catalog__item {
+   height: 430px;
+   width: 245px;
+   background-color: $color-lightgray;
+
+ }
 }

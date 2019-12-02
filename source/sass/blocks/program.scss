@@ -2,6 +2,7 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  position: relative;
 }
 
 .program__container {
@@ -14,6 +15,8 @@
   color: $color-white;
   line-height: 36px;
   text-align: center;
+  margin-top: 26px;
+  margin-bottom: 12px;
 }
 
 .program__slogan {
@@ -23,20 +26,44 @@
   text-transform: uppercase;
   font-weight: normal;
   color: $color-white;
+  margin-bottom: 30px;
+}
+
+.program__image-feed {
+  width: 280px;
+  height: 270px;
+  margin-bottom: 4px;
 }
 
 @media (min-width: $tablet-width) {
   .program {
-    background-image: url("../../img/index-can-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 260px;
-    min-height: 950px;
+    min-height: 836px;
+    background: none;
+    margin-bottom: 0px;
   }
 
   .program__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 26px 88px;
+  }
+
+  .program__container::before {
+    content: " ";
+    position: absolute;
+
+    width: 709px;
+    height: 609px;
+
+    top: 226px;
+    right: 30px;
+
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    z-index: -1;
   }
 
   .program__heading {
@@ -46,6 +73,7 @@
     text-transform: none;
     max-width: 426px;
     text-align: left;
+    margin-bottom: 26px;
   }
 
   .program__slogan {
@@ -70,13 +98,33 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    background-image: url("../../img/index-can-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 560px 30px;
-    min-height: 586px;
+    min-height: 580px;
   }
 
   .program__container {
-    padding-left: 80px;
+    margin-top: 86px;
+    margin-left: 80px;
+  }
+
+  .program__container::before {
+    content: " ";
+    position: absolute;
+
+    width: 552px;
+    height: 499px;
+
+    top: -52px;
+    left: 490px;
+
+    background-image: url("../../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    z-index: -1;
+  }
+
+  .program__slogan {
+    margin-top: 18px;
+    margin-bottom: 56px;
   }
 }
