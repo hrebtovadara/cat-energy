@@ -1,25 +1,19 @@
-.logo {
-  display: block;
+.logo img {
   width: 190px;
-  height: 66px;
-
-
-  background-image: url("../../img/logo-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
+  height: 38px;
 }
 
 
 @media (min-width: $tablet-width) {
-
+  .logo img {
+    width: 173px;
+    height: 58px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .logo__catalog {
-    font-size: 22px;
-    height: 64px;
-    padding: 22px;
-    color: $color-gray;
+  .logo img {
+    width: 202px;
+    height: 59px;
   }
 }
