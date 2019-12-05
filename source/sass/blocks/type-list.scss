@@ -12,6 +12,7 @@
   margin-top: 22px;
   display: flex;
   justify-content: space-between;
+  min-height: 266px;
 }
 
 .type-list__heading {
@@ -35,6 +36,9 @@
     font-size: 16px;
     line-height: 24px;
     padding: 60px 50px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    min-height: 372px;
   }
 
   .type-list__text {
@@ -69,13 +73,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 375px;
   }
 
   .type-list__main {
     max-width: 460px;
+
   }
 
   .type-list__image {
     display: none;
+  }
+
+  .type-list__item {
+    margin-top: 0;
+    padding: 60px 55px;
   }
 }

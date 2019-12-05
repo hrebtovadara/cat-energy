@@ -2,9 +2,6 @@
   position: relative;
 }
 
-.footer__logo {
-  font-size: 22px;
-}
 
 .developer__academy {
   font-size: 16px;
@@ -25,11 +22,15 @@
   line-height: 20px;
 }
 
-.footer__container {
+.footer__fon {
   background-color: $color-lightgray;
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 236px;
 }
 
 .footer__map {
@@ -71,5 +72,9 @@
     top: 95px;
     left: 80px;
     max-width: 570px;
+  }
+
+  .footer__container {
+    padding: 60px 0;
   }
 }

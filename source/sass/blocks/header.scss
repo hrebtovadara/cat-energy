@@ -8,11 +8,20 @@
   padding: 0;
 }
 
+.header__logo {
+  border-bottom: 1px solid $color-line;
+}
+
 @media (min-width: $tablet-width) {
   .header__container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     max-height: 110px;
+  }
+
+  .header__logo {
+    border-bottom: none;
   }
 }
 
@@ -20,5 +29,6 @@
   .header__container {
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
   }
 }

@@ -6,6 +6,7 @@ body {
   font-style: normal;
   padding: 0;
   box-sizing: border-box;
+  min-width: 320px;
 }
 
 img {
@@ -24,16 +25,4 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-@media (min-width: $tablet-width) {
-  body {
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    width: 1440px;
-  }
 }

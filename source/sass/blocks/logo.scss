@@ -1,7 +1,18 @@
 .logo {
-  font-size: 22px;
-  height: 64px;
-  padding: 22px;
+  display: block;
+  width: 190px;
+  height: 66px;
+
+
+  background-image: url("../../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+@media (min-width: $tablet-width) {
+
 }
 
 @media (min-width: $desktop-width) {
