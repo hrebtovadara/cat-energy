@@ -10,6 +10,7 @@
 
 .header__logo {
   border-bottom: 1px solid $color-line;
+  padding: 12px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,6 +23,7 @@
 
   .header__logo {
     border-bottom: none;
+    margin-top: 12px;
   }
 }
 
