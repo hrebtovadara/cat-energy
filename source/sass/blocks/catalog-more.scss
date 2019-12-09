@@ -10,7 +10,6 @@
   position: relative;
 }
 
-
 .catalog-more__heading {
   color: $color-black;
   font-size: 16px;
@@ -22,11 +21,9 @@
     content: " ";
     top: 26px;
     left: 125px;
-
     height: 30px;
     width: 30px;
-
-    background-image: url(../../img/icon-plus-mobile.svg);
+    background-image: url("../../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
     opacity: 0.2;
   }
@@ -84,7 +81,7 @@
       height: 60px;
       width: 60px;
 
-      background-image: url(../../img/icon-plus.svg);
+      background-image: url("../../img/icon-plus.svg");
       background-repeat: no-repeat;
       opacity: 0.2;
     }
@@ -105,7 +102,7 @@
       height: 60px;
       width: 60px;
 
-      background-image: url(../../img/icon-plus.svg);
+      background-image: url("../../img/icon-plus.svg");
       background-repeat: no-repeat;
       opacity: 0.2;
     }
