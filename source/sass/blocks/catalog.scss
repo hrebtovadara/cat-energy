@@ -1,7 +1,6 @@
 .catalog__heading {
-  padding: 16px 0;
-  margin: 0;
-  margin-bottom: 12px;
+  margin-top: 14px;
+  margin-bottom: 28px;
 }
 
 .catalog__table {
@@ -19,31 +18,37 @@
 }
 
 .catalog__image {
-  width: 140px;
+  width: auto;
   height: 144px;
 }
 
 .catalog__container {
   display: flex;
   margin-bottom: 0;
+  position: relative;
 }
 
 .catalog__container div:nth-child(1) {
   order: 1;
 }
 
-.catalog-description__list {
-  font-size: 12px;
-  line-height: 15px;
-  margin-right: 0;
-}
-
 .catalog__item {
   display: flex;
   flex-direction: column;
+  margin: 0 -20px;
   margin-bottom: 0;
+  padding: 0 20px;
   padding-bottom: 24px;
-  border-top: 1px solid $color-line;
+  border: 1px solid $color-catalogline;
+  border-top: none;
+}
+
+.catalog__item:nth-child(1) {
+  border-top: 1px solid $color-catalogline;
+}
+
+.catalog__item:last-child {
+  padding-bottom: 0;
 }
 
 .catalog__title {
@@ -51,11 +56,6 @@
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 12px;
-}
-
-.catalog-description__list tr {
-  display: flex;
-  justify-content: space-between;
 }
 
 .catalog__button {
@@ -79,22 +79,24 @@
   .catalog__title {
     max-width: 150px;
     font-size: 20px;
-    margin: 20px auto;
+    margin: 21px auto;
     text-align: center;
     margin-bottom: 18px;
   }
 
   .catalog__heading {
     font-size: 60px;
-    margin-top: 34px;
+    margin-top: 44px;
+    margin-bottom: 24px;
   }
 
   .catalog__item {
-    height: 430px;
+    min-height: 430px;
     width: 324px;
     background-color: $color-lightgray;
     border: none;
-    margin-top: 140px;
+    margin: 0;
+    margin-top: 141px;
     padding: 35px 36px;
     padding-top: 142px;
   }
@@ -106,19 +108,14 @@
   }
 
   .catalog__image {
-    width: 0px;
-    height: 0px;
+    position: absolute;
+    top: -188px;
+    left: -36px;
+    width: 324px;
   }
 
-  .catalog-description__list tr {
-    border-bottom: 1px solid $color-tableline;
-    padding: 7px 0;
-  }
-
-  .catalog-description__list  {
-    font-size: 16px;
-    line-height: 16px;
-    margin-bottom: 30px;
+  .catalog__item:nth-child(2n) .catalog__image {
+    top: -224px;
   }
 }
 
@@ -127,9 +124,28 @@
     height: 430px;
     width: 245px;
     background-color: $color-lightgray;
+    padding: 35px 35px;
+    padding-top: 142px;
+    margin-top: 142px;
   }
 
   .catalog__heading {
-    margin-top: 64px;
+    margin-top: 68px;
+  }
+
+  .catalog__image {
+    position: absolute;
+    bottom: 222px;
+    left: -36px;
+    width: 324px;
+  }
+
+  .catalog__item:last-child {
+    border: 1px solid $color-catalog-desktop;
+  }
+
+  .catalog__button {
+    padding: 10px;
+    margin: 0 2px;
   }
 }

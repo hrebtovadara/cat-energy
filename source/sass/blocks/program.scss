@@ -48,7 +48,7 @@
   .program {
     min-height: 836px;
     background: none;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .program__container {
@@ -103,12 +103,12 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-}
-.program__button {
-  font-size: 20px;
-  line-height: 20px;
-}
 
+  .program__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .program {
@@ -116,20 +116,17 @@
   }
 
   .program__container {
-    margin-top: 86px;
+    margin-top: 76px;
     margin-left: 80px;
   }
 
   .program__container::before {
     content: " ";
     position: absolute;
-
     width: 552px;
     height: 499px;
-
     top: -52px;
     left: 490px;
-
     background-image: url("../../img/index-can-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
