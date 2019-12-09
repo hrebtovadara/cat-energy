@@ -17,20 +17,18 @@
   margin-top: 24px;
   margin-bottom: 0;
 
-  &::before,
-  &::after {
+  &::before {
     position: absolute;
     content: " ";
-    top: 40px;
-    left: 124px;
-    width: 30px;
-    height: 2px;
-    background-color: $color-black;
-    opacity: 0.2;
-  }
+    top: 26px;
+    left: 125px;
 
-  &::before {
-    transform: rotate(90deg);
+    height: 30px;
+    width: 30px;
+
+    background-image: url(../../img/icon-plus-mobile.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
   }
 }
 
@@ -77,20 +75,18 @@
     margin-top: 70px;
     margin-bottom: 0;
 
-    &::before,
-    &::after {
+    &::before {
       position: absolute;
       content: " ";
-      top: 46px;
+      top: 16px;
       left: 96px;
-      width: 60px;
-      height: 2px;
-      background-color: $color-black;
-      opacity: 0.2;
-    }
 
-    &::before {
-      transform: rotate(90deg);
+      height: 60px;
+      width: 60px;
+
+      background-image: url(../../img/icon-plus.svg);
+      background-repeat: no-repeat;
+      opacity: 0.2;
     }
   }
 }
@@ -100,20 +96,18 @@
     margin-top: 72px;
     margin-bottom: 0;
 
-    &::before,
-    &::after {
+    &::before {
       position: absolute;
       content: " ";
-      top: 49px;
-      left: 55px;
-      width: 60px;
-      height: 2px;
-      background-color: $color-black;
-      opacity: 0.2;
-    }
+      top: 18px;
+      left: 56px;
 
-    &::before {
-      transform: rotate(90deg);
+      height: 60px;
+      width: 60px;
+
+      background-image: url(../../img/icon-plus.svg);
+      background-repeat: no-repeat;
+      opacity: 0.2;
     }
   }
 
