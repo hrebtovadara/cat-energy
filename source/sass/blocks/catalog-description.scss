@@ -1,0 +1,30 @@
+.catalog-description__list {
+  font-size: 12px;
+  line-height: 15px;
+  margin-right: 0;
+}
+
+.catalog-description__list tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-description__list tr {
+    border-bottom: 1px solid $color-tableline;
+    padding: 7px 0;
+  }
+
+  .catalog-description__list {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-description__list tr {
+    padding-top: 6px;
+    padding-bottom: 7px;
+  }
+}

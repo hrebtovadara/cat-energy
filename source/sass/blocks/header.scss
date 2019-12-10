@@ -29,8 +29,13 @@
 
 @media (min-width: $desktop-width) {
   .header__container {
-    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     position: relative;
+    min-height: 120px;
+  }
+
+  .header__logo {
+    padding-bottom: 0;
   }
 }
