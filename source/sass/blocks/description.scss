@@ -19,6 +19,10 @@
   position: relative;
 }
 
+.description__text br {
+  display: none;
+}
+
 .description__text::before {
   content: " ";
   position: absolute;
@@ -42,7 +46,7 @@
   .description__section-title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 74px;
+    margin-bottom: 43px;
   }
 
   .description__list {
@@ -52,17 +56,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     counter-reset: section;
+    margin-bottom: 0;
   }
 
   .description__item {
     width: 325px;
-    height: 317px;
+    height: 286px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
     counter-increment: section;
     position: relative;
+    margin-top: 31px;
   }
 
   .description__item::before {
@@ -81,6 +87,10 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 50px;
+  }
+
+  .description__text br {
+    display: block;
   }
 
   .description__text::before {

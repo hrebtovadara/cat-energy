@@ -1,4 +1,11 @@
 .developer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.developer__logo-icon {
+  width: 27px;
+  height: 34px;
 }

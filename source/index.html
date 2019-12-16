@@ -59,7 +59,10 @@
               <h3 class="type-list__heading type-list__heading-clim section-title">Похудение</h3>
               <p class="type-list__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
                 Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="type-list__button section-text" href="#">Каталог slim</a>
+              <a class="type-list__button section-text" href="#">Каталог slim
+                <svg class="type-list__arrow" width="24" height="11">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg></a>
             </div>
           </li>
           <li class="type-list__item">
@@ -67,7 +70,10 @@
               <h3 class="type-list__heading type-list__heading-pro section-text">Набор массы</h3>
               <p class="type-list__text type-list__text-pro">Заработать авторитет среди дворовых котов
                 и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="type-list__button section-text" href="#">Каталог pro</a>
+              <a class="type-list__button section-text" href="#">Каталог pro
+                <svg class="type-list__arrow" width="24" height="11">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg></a>
             </div>
           </li>
         </ul>
@@ -125,7 +131,7 @@
           <div class="example__flex-container">
             <ul class="example__cat">
               <li class="example__cat-one"><img src="img/before-mobile@1x.png"></li>
-              <li class="example__cat-two"><img src="img/after-mobile@1x.png"></li>
+              <li class="example__cat-two visually-hidden"><img src="img/after-mobile@1x.png"></li>
             </ul>
             <div class="example__progress-result">
               <span class="example__before section-text">Было</span>
@@ -139,7 +145,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__location">
       <div class="footer__description">
         <h3 class="footer__heading section-text">Приглашаем к сотруничеству дилеров!</h3>
         <p class="footer__adress">ул. Большая Конюшенная, д. 19/8
@@ -147,31 +153,46 @@
       </div>
       <div class="footer__map"></div>
     </div>
-    <div class="footer__fon">
+    <div class="footer__contact">
       <div class="footer__container container">
-        <a href="index.html"><img src="img/logo-footer.svg" width="128" height="24"></a>
-        <ul class="social">
-          <li>
-            <a href="#" class="social__button">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social__button">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="social__button">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-        </ul>
+        <a href="index.html" class="footer__logo">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="cat energy">
+        </a>
+          <ul class="social">
+            <li>
+              <a href="#" class="social__button">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="social__icon social__vk" width="22" height="12">
+                  <use xlink:href="img/sprite.svg#social-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social__button">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="social__icon social__insta" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#social-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social__button">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="social__icon social__fb" width="10" height="19">
+                  <use xlink:href="img/sprite.svg#social-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         <div class="developer">
           <a class="developer__academy" href="#">HTML Academy</a>
           <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptives"><span
               class="visually-hidden">лендинг
-              интенсива «Профессиональный HTML и CSS, уровень 2»</span></a>
+              интенсива «Профессиональный HTML и CSS, уровень 2»</span>
+            <svg class="developer__logo-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
