@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
 <symbol id="arrow" viewBox="0 0 24.2 11">
- <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 "/>
+<polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 "/>
 </symbol>
 
 <symbol id="social-vk" viewBox="0 0 22 12">
@@ -251,7 +251,7 @@ s1.8,
 0.6H1.1v2.3h2V18 z"/>
 </symbol>
 
-<symbol id="htmlacademy" viewBox="0 0 60 60">
+<symbol id="htmlacademy" viewBox="-10 0 60 60">
 <path fill="#666666"
 d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17
 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7

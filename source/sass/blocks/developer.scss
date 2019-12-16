@@ -1,11 +1,13 @@
-.developer {
+.developer__academy {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  min-width: 280px;
 }
 
-.developer__logo-icon {
-  width: 27px;
-  height: 34px;
+
+@media (min-width: $tablet-width) {
+  .developer__academy {
+    min-width: 160px;
+  }
 }
