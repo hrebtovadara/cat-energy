@@ -77,15 +77,22 @@
   position: relative;
 }
 
-.type-list__button::after {
-  content: " ";
+// .type-list__button::after {
+//   content: " ";
+//   position: absolute;
+//   top: 8px;
+//   left: 98px;
+//   width: 24px;
+//   height: 11px;
+//   background-image: url("../../img/icon-right-arrow-long.svg");
+//   background-repeat: no-repeat;
+// }
+
+.type-list__arrow {
   position: absolute;
-  top: 8px;
-  left: 98px;
-  width: 24px;
-  height: 11px;
-  background-image: url("../../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
+  top: 9px;
+  left: 96px;
+  fill: #3f4242;
 }
 
 @media (min-width: $tablet-width) {
@@ -121,9 +128,15 @@
     position: relative;
   }
 
-  .type-list__button::after {
+  // .type-list__button::after {
+  //   top: 8px;
+  //   left: 130px;
+  // }
+
+  .type-list__arrow {
     top: 8px;
-    left: 130px;
+    left: 129px;
+    fill: #3f4242;
   }
 
   .type-list__heading::before {
