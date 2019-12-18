@@ -3,6 +3,13 @@
   height: 38px;
 }
 
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
 
 @media (min-width: $tablet-width) {
   .logo img {

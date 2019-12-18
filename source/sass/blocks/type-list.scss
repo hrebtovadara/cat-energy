@@ -77,16 +77,17 @@
   position: relative;
 }
 
-// .type-list__button::after {
-//   content: " ";
-//   position: absolute;
-//   top: 8px;
-//   left: 98px;
-//   width: 24px;
-//   height: 11px;
-//   background-image: url("../../img/icon-right-arrow-long.svg");
-//   background-repeat: no-repeat;
-// }
+.type-list__button::after {
+  content: " ";
+  position: absolute;
+  top: 8px;
+  right: -35px;
+
+  width: 24px;
+  height: 11px;
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+}
 
 .type-list__arrow {
   position: absolute;
@@ -128,10 +129,10 @@
     position: relative;
   }
 
-  // .type-list__button::after {
-  //   top: 8px;
-  //   left: 130px;
-  // }
+  .type-list__button::after {
+    top: 10px;
+    right: -48px;
+  }
 
   .type-list__arrow {
     top: 8px;
@@ -242,5 +243,9 @@
 
   .type-list__text-pro {
     width: 480px;
+  }
+
+  .type-list__button::after {
+    top: 8px;
   }
 }

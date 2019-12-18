@@ -2,6 +2,7 @@
   background-color: $color-lightgray;
   margin-top: 32px;
   height: 705px;
+
 }
 
 .example__heading {
@@ -38,6 +39,22 @@
   justify-content: center;
 }
 
+.example__text{
+  max-width: 270px;
+  line-height: 19px;
+}
+
+.example__item {
+  border: 1px solid $color-tableline;
+  border-radius: 2px;
+  position: relative;
+}
+
+.example__text {
+ position: absolute;
+ background-color: $color-lightgray;
+}
+
 @media (min-width: $tablet-width) {
   .example {
     height: 1080px;
@@ -51,6 +68,7 @@
   .example__heading {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 42px;
   }
 
   .example__results-all {
@@ -61,6 +79,7 @@
   .example__index {
     font-size: 30px;
     line-height: 38px;
+    border: 1px solid $color-line;
   }
 
   .example__expenses {
@@ -70,7 +89,12 @@
   .example__progress-result span {
     text-transform: uppercase;
     font-size: 20px;
-    border-bottom: 1px solid $color-line;
+  }
+
+  .example__text{
+    margin-top: 64px;
+    max-width: 690px;
+    line-height: 24px;
   }
 }
 
