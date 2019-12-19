@@ -41,26 +41,21 @@
     border: none;
     font-size: 18px;
     line-height: 24px;
-
-    &:last-child a {
-      margin-left: 0;
-    }
   }
 
-  .site-list__item {
-    &--active {
-      position: relative;
+  .site-list__item--active {
+    position: relative;
+  }
 
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 12px;
-        left: 0;
-        height: 2px;
-        background: $color-green;
-      }
-    }
+
+  .site-list__item--active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    left: 0;
+    height: 2px;
+    background: $color-green;
   }
 }
 

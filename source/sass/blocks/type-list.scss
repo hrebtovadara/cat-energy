@@ -9,7 +9,7 @@
   list-style: none;
   background-color: $color-lightgray;
   padding: 20px;
-  margin-top: 22px;
+  margin-top: 21px;
   display: flex;
   justify-content: space-between;
   min-height: 266px;
@@ -96,12 +96,22 @@
   fill: #3f4242;
 }
 
+.type-list__button:hover::after {
+  background-image: url("../../img/icon-right-arrow-verylong.svg");
+  width: 33px;
+  right: -44px;
+}
+
+.type-list__button:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .type-list__item {
     font-size: 16px;
     line-height: 24px;
     padding: 60px 52px;
-    padding-bottom: 56px;
+    padding-bottom: 53px;
     margin-top: 0;
     margin-bottom: 30px;
     min-height: 372px;
@@ -111,7 +121,7 @@
     border-bottom: none;
     margin-top: 0;
     padding-top: 26px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 
   .type-list__main {
@@ -194,7 +204,9 @@
   .type-list__item {
     margin-top: 0;
     padding: 60px 52px;
+    padding-bottom: 56px;
     width: 570px;
+    min-height: 370px;
   }
 
   .type-list__heading {
@@ -204,7 +216,7 @@
 
   .type-list__text {
     padding-top: 74px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .type-list__heading::before {
