@@ -52,6 +52,15 @@
   text-align: center;
 }
 
+.footer__catalog {
+  margin-top: 35px;
+  background-color: $color-lightgray;
+}
+
+.footer__description-catalog {
+  padding: 15px 0 12px;
+}
+
 @media (min-width: $tablet-width) {
   .footer__logo img {
     max-width: 128px;
@@ -98,6 +107,14 @@
     display: flex;
     justify-content: space-between;
     padding: 38px 40px;
+  }
+
+  .footer__catalog {
+    margin-top: 75px;
+  }
+
+  .footer__description-catalog {
+    padding: 52px 40px 40px;
   }
 }
 

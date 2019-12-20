@@ -256,68 +256,84 @@
     <section class="additionally">
       <div class="container">
         <h2 class="additionally__heading section-title">Дополнительные товары</h2>
-        <ul class="additionally__list">
-          <li class="additionally__item">
-            <h3 class="additionally__title section-title">Сахарозаменитель</h3>
-            <table class="additionally__description">
-              <tr>
-                <td class="additionally__field">1 упаковка (100 г)</td>
-                <td class="additionally__value">200 Р.</td>
-              </tr>
-            </table>
-            <a class="additionally__button button" href="#">Заказать</a>
-          </li>
-          <li class="additionally__item">
-            <h3 class="additionally__title section-title">Питьевая вода</h3>
-            <table>
-              <tr>
-                <td class="additionally__field">5 литров</td>
-                <td class="additionally__value">50 Р.</td>
-              </tr>
-            </table>
-            <a class="additionally__button button" href="#">Заказать</a>
-          </li>
-          <li class="additionally__item">
-            <h3 class="additionally__title section-title">Молоко</h3>
-            <table>
-              <tr>
-                <td class="additionally__field">1 литр</td>
-                <td class="additionally__value">100 Р.</td>
-              </tr>
-            </table>
-            <a class="additionally__button button" href="#">Заказать</a>
-          </li>
-          <li class="additionally__item">
-            <h3 class="additionally__title section-title">Витамины</h3>
-            <table>
-              <tr>
-                <td class="additionally__field">1 упаковка (100 г)</td>
-                <td class="additionally__value">300 Р.</td>
-              </tr>
-            </table>
-            <a class="additionally__button button" href="#">Заказать</a>
-          </li>
-        </ul>
+        <div class="additionally__flex-container">
+          <ul class="additionally__list">
+            <li class="additionally__item">
+              <div>
+                <h3 class="additionally__title section-text">Сахарозаменитель</h3>
+                <table class="additionally__description">
+                  <tr>
+                    <td class="additionally__field">1 упаковка (100 г)</td>
+                    <td class="additionally__value">200 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="additionally__button button" href="#">Заказать</a>
+            </li>
+            <li class="additionally__item">
+              <div>
+                <h3 class="additionally__title section-text">Питьевая вода</h3>
+                <table class="additionally__description">
+                  <tr>
+                    <td class="additionally__field">5 литров</td>
+                    <td class="additionally__value">50 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="additionally__button button" href="#">Заказать</a>
+            </li>
+            <li class="additionally__item">
+              <div>
+                <h3 class="additionally__title section-text">Молоко</h3>
+                <table class="additionally__description">
+                  <tr>
+                    <td class="additionally__field">1 литр</td>
+                    <td class="additionally__value">100 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="additionally__button button" href="#">Заказать</a>
+            </li>
+            <li class="additionally__item">
+              <div>
+                <h3 class="additionally__title section-text">Витамины</h3>
+                <table class="additionally__description">
+                  <tr>
+                    <td class="additionally__field">1 упаковка (30 г)</td>
+                    <td class="additionally__value">300 Р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="additionally__button button" href="#">Заказать</a>
+            </li>
+          </ul>
+          <p class="action container">Закажите все <br> и получите чехол для кота в подарок!</p>
+        </div>
       </div>
+      <!-- <p class="action container">Закажите все <br> и получите чехол для кота в подарок!</p> -->
     </section>
-    <div class="action container">
-      <img class="action__image" src="https://via.placeholder.com/55x60">
-      <p class="action__text">Закажите все и получите чехол для кота в подарок!</p>
-    </div>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer__catalog">
     <div class="container footer__location">
-      <div class="footer__description">
-        <h3 class="footer__heading section-text">Приглашаем к сотруничеству дилеров!</h3>
-        <p class="footer__adress">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+      <div class="footer__description footer__description-catalog">
+        <h3 class="footer__heading section-text">Приглашаем <br> к сотрудничеству дилеров!</h3>
+        <p class="footer__adress">ул. Большая Конюшенная, д. 19/8 <span class="footer__spb">Санкт-Петербург</span></p>
       </div>
-      <div class="footer__map"></div>
+    </div>
+    <div>
+      <picture class="footer__image visually-hidden">
+        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+        <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+          alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </picture>
+      <iframe class="footer-map" src="https://yandex.ru/map-widget/v1/-/CGtaV8M9" width="320" height="362"
+        allowfullscreen="true"></iframe>
     </div>
     <div class="footer__contact">
       <div class="footer__container container">
-        <a href="index.html" class="footer__logo">
+        <a href="#" class="footer__logo">
           <img src="img/logo-footer.svg" width="128" height="24" alt="cat energy">
         </a>
         <ul class="social">
@@ -348,9 +364,8 @@
         </ul>
         <div class="developer">
           <a class="developer__academy" href="https://htmlacademy.ru/intensive/adaptives">
-            <div>HTML Academy</div>
-            <span class="visually-hidden">лендинг интенсива «Профессиональный HTML и CSS, уровень 2»</span>
-            <svg class="developer__logo-icon" width="40" height="44" viewBox="-10 0 60 60">
+            <p>HTML Academy</p>
+            <svg class="developer__logo-icon" width="40" height="44">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
