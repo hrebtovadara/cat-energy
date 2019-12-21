@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <header class="header__catalog">
+  <header class="header">
     <div class="container">
       <div class="header__container  main-nav--closed main-nav--nojs">
         <div class="header__logo">
-          <a href="index.html" class="logo logo__catalog">
+          <a href="index.html" class="logo">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg 1x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg 1x">
@@ -27,8 +27,8 @@
         <nav class="main-nav">
           <ul class="main-nav__list site-list site-list__catalog">
             <li class="site-list__item"><a class="section-text" href="index.html">Главная</a></li>
-            <li class="site-list__item"><a class="section-text site-list__item--active">Каталог продукции</a></li>
-            <li class="site-list__item"><a class="section-text" href="form.html">Подбор программы</a></li>
+            <li class="site-list__item"><a class="section-text" href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item"><a class="section-text site-list__item--active" >Подбор программы</a></li>
           </ul>
         </nav>
       </div>
@@ -57,62 +57,61 @@
         </fieldset>
         <fieldset class="filter-option">
           <ul>
-            <li class="filter-option">
-              <input class="data-list-input" type="radio" name="data-list-slim" id="slim" checked>
+            <li class="filter-option__item">
+              <input class="filter-option__radio" type="radio" name="filter-option-slim" id="slim" checked>
               <label for="slim">Похудение</label>
             </li>
-            <li class="filter-option">
-              <input class="data-list-input" type="radio" name="data-list-pro" id="pro">
+            <li class="filter-option__item">
+              <input class="filter-option__radio" type="radio" name="filter-option-pro" id="pro">
               <label for="pro">Набор массы</label>
             </li>
-            <li class="filter-option">
-              <input class="data-list-input" type="radio" name="data-list-help" id="help">
+            <li class="filter-option__item">
+              <input class="filter-option__radio" type="radio" name="filter-option-help" id="help">
               <label for="help">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="contact">
-          <legend>Контактные данные (владельца кота)</legend>
+          <legend class="contact__heading">Контактные данные (владельца кота)</legend>
           <ul>
-            <li>
+            <li class="contact__item">
               <label for="email">E-mail:*</label>
               <input id="email" type="email" name="contact-email" value="" placeholder="kuklachev@gmail.com" required>
             </li>
-            <li>
+            <li class="contact__item">
               <label for="telefon">E-mail:*</label>
               <input id="telefon" type="tel" name="contact-tel" value="" placeholder="8(960)900-60-90" required>
             </li>
           </ul>
         </fieldset>
         <fieldset class="comment">
-          <legend>Коментарий</legend>
-          <input type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
+          <legend class="comment__heading">Коментарий</legend>
+          <input class="comment__text" type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
         </fieldset>
         <fieldset class="more">
-          <legend>Дополнительно</legend>
+          <legend class="more__heading">Дополнительно</legend>
           <ul>
-            <li>
-                <input class="more-" type="radio" name="more" id="" checked>
-                <label for="sweetener"></label>
+            <li class="more__item">
+                <input class="more__checkbox" type="checkbox" name="more__item-sweetener" id="sweetener" checked>
+                <label for="sweetener">Сахарозаменитель</label>
             </li>
-            <li>
-                <input class="more-" type="radio" name="more" id="" checked>
-                <label for="water"></label>
+            <li class="more__item">
+                <input class="more__checkbox" type="checkbox" name="more__item-water" id="water" checked>
+                <label for="water">Питьевая вода</label>
             </li>
-            <li>
-                <input class="more-" type="radio" name="more" id="" checked>
-                <label for="milk"></label>
+            <li class="more__item">
+                <input class="more__checkbox" type="checkbox" name="more__item-milk" id="milk" checked>
+                <label for="milk">Молоко</label>
             </li>
-            <li>
-                <input class="more-" type="radio" name="more" id="" checked>
-                <label for="vitamins"></label>
+            <li class="more__item">
+                <input class="more__checkbox" type="checkbox" name="more__item-vitamins" id="vitamins" checked>
+                <label for="vitamins">Витамины</label>
             </li>
           </ul>
-
+        </fieldset>
           <input type="submit" value="Отправить заявку">
           <p>*—Обязательные поля</p>
-        </fieldset>
-      </form>
+        </form>
   </main>
 
   <footer class="footer">
