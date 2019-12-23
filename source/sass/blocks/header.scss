@@ -53,4 +53,10 @@
     z-index: -1;
     background-size: cover;
   }
+
+  @media (min-resolution: $retina-dppx) {
+    .action {
+    background-image: url("../index-background-desktop@2x.jpg");
+    }
+  }
 }

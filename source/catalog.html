@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="header__catalog">
+  <header>
     <div class="container">
       <div class="header__container  main-nav--closed main-nav--nojs">
         <div class="header__logo">
@@ -68,7 +68,7 @@
                 <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x">
               </picture>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
@@ -97,7 +97,7 @@
                 <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x">
               </picture>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
@@ -126,7 +126,7 @@
                 <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x">
               </picture>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
@@ -154,7 +154,7 @@
                 <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x">
               </picture>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
@@ -183,7 +183,7 @@
                 <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x">
               </picture>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
@@ -212,7 +212,7 @@
                 <img src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x">
               </picture>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
@@ -241,13 +241,13 @@
                 <img src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x">
               </picture>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog-more">
               <h3 class="catalog-more__heading section-text">Показать еще 100500 товаров</h3>
               <p class="catalog-more__text">На самом деле вкусов гораздо больше!</p>
-              <a class="catalog-more__all button" href="#">Показать все</a>
+              <a class="catalog-more__all button" href="product-all.html">Показать все</a>
             </div>
           </li>
         </ul>
@@ -268,7 +268,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="additionally__button button" href="#">Заказать</a>
+              <a class="additionally__button button" href="order.html">Заказать</a>
             </li>
             <li class="additionally__item">
               <div>
@@ -280,7 +280,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="additionally__button button" href="#">Заказать</a>
+              <a class="additionally__button button" href="order.html">Заказать</a>
             </li>
             <li class="additionally__item">
               <div>
@@ -292,7 +292,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="additionally__button button" href="#">Заказать</a>
+              <a class="additionally__button button" href="order.html">Заказать</a>
             </li>
             <li class="additionally__item">
               <div>
@@ -304,7 +304,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="additionally__button button" href="#">Заказать</a>
+              <a class="additionally__button button" href="order.html">Заказать</a>
             </li>
           </ul>
           <p class="action container">Закажите все <br> и получите чехол для кота в подарок!</p>
@@ -321,15 +321,16 @@
         <p class="footer__adress">ул. Большая Конюшенная, д. 19/8 <span class="footer__spb">Санкт-Петербург</span></p>
       </div>
     </div>
-    <div>
-      <picture class="footer__image visually-hidden">
+    <div class="footer__map">
+      <picture class="footer__image">
         <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
         <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
           alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </picture>
-      <iframe class="footer-map" src="https://yandex.ru/map-widget/v1/-/CGtaV8M9" width="320" height="362"
-        allowfullscreen="true"></iframe>
+      <iframe class="footer__interactive-map" width="320" height="362"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A6239bf29f712d3ad128248272ae43f2253159995af7dc7dab3d76821921abd75&amp;source=constructor"
+        frameborder="0"></iframe>
     </div>
     <div class="footer__contact">
       <div class="footer__container container">

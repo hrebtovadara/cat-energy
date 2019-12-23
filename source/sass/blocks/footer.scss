@@ -14,6 +14,10 @@
   padding-bottom: 10px;
 }
 
+.footer__description-form {
+  padding: 15px 0 12px;
+}
+
 .footer__heading {
   font-size: 16px;
   width: 140px;
@@ -47,13 +51,29 @@
   height: 362px;
 }
 
-.footer__image {
+.footer__map {
+  position: relative;
+}
+
+.footer__interactive-map {
+  position: absolute;
+  top: 0;
+}
+
+.footer__image img {
+  margin: 0 auto;
   display: block;
-  text-align: center;
+  width: auto;
+  height: 362px;
 }
 
 .footer__catalog {
   margin-top: 35px;
+  background-color: $color-lightgray;
+}
+
+.footer__form {
+  margin-top: 30px;
   background-color: $color-lightgray;
 }
 
@@ -113,8 +133,16 @@
     margin-top: 75px;
   }
 
+  .footer__description-form {
+    padding: 52px 40px 40px;
+  }
+
   .footer__description-catalog {
     padding: 52px 40px 40px;
+  }
+
+  .footer__image img {
+    height: 396px;
   }
 }
 
@@ -150,5 +178,9 @@
 
   .footer__location {
     position: relative;
+  }
+
+  .footer__image img {
+    height: 400px;
   }
 }
