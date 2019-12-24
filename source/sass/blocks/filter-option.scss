@@ -87,3 +87,20 @@
     height: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .filter-option ul {
+    width: 570px;
+    height: 196px;
+    padding: 36px 20px 2px;
+  }
+
+  .filter-option__item {
+    margin-bottom: 33px;
+    padding-left: 68px;
+    position: relative;
+    width: 300px;
+  }
+
+
+}

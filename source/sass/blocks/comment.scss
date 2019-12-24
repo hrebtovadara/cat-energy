@@ -62,3 +62,9 @@
     padding: 16px 17px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin-bottom: 64px;
+  }
+}

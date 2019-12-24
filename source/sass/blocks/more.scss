@@ -104,3 +104,13 @@
     left: 15px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .more ul {
+    margin-bottom: 20px;
+  }
+
+  .more__item {
+    width: 245px;
+  }
+}

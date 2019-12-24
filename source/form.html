@@ -33,13 +33,14 @@
         </nav>
       </div>
     </div>
-    </header>
+  </header>
 
-    <main>
-      <h1 class="form-main__heading container section-title">Подбор программы</h1>
-      <form class="form-main">
+  <main>
+    <h1 class="form-main__heading container section-title">Подбор программы</h1>
+    <form class="form-main">
+      <div class="form-main__profil container__form">
         <fieldset class="data-list">
-          <div class="container__form">
+          <!-- <div class="container__form"> -->
             <legend class="data-list__title section-text-new">Заполните анкету и мы подберем <br> программу питания для
               вашего кота</legend>
             <ul class="section-text-new">
@@ -56,10 +57,10 @@
                 <input id="age" type="number" name="data-list-age" value="" placeholder="7">
               </li>
             </ul>
-          </div>
+          <!-- </div> -->
         </fieldset>
         <fieldset class="filter-option">
-          <div class="container__form">
+          <!-- <div class="container__form"> -->
             <ul class="section-text-new">
               <li class="filter-option__item">
                 <input class="filter-option__radio" type="radio" name="filter-option" id="slim" checked>
@@ -74,120 +75,122 @@
                 <label for="help">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
-          </div>
+          <!-- </div> -->
         </fieldset>
-        <fieldset class="contact">
-          <div class="container__form">
-            <legend class="contact__heading section-title-new">Контактные данные (владельца кота)</legend>
-            <ul class="section-text-new">
-              <li class="contact__item">
-                <label class="contact__item-email" for="email">E-mail:*</label class="contact__item-tel">
-                <input id="email" type="email" name="contact-email" value="" placeholder="kuklachev@gmail.com" required>
-              </li>
-              <li class="contact__item">
-                <label class="contact__item-tel" for="telefon">Телефон:*</label>
-                <input id="telefon" type="tel" name="contact-tel" value="" placeholder="8 (960) 900-60-90" required>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="comment">
-          <div class="container__form">
-            <legend class="comment__heading section-title-new">Комментарий</legend>
-            <textarea class="comment__text section-text-new" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
-        </fieldset>
-        <fieldset class="more">
-          <div class="container__form">
-            <legend class="more__heading section-title-new">Дополнительно</legend>
-            <ul class="section-text-new">
-              <li class="more__item">
-                <input class="more__checkbox" type="checkbox" name="more__item" id="sweetener" checked>
-                <label for="sweetener">Сахарозаменитель</label>
-              </li>
-              <li class="more__item">
-                <input class="more__checkbox" type="checkbox" name="more__item" id="water">
-                <label for="water">Питьевая вода</label>
-              </li>
-              <li class="more__item">
-                <input class="more__checkbox" type="checkbox" name="more__item" id="milk">
-                <label for="milk">Молоко</label>
-              </li>
-              <li class="more__item">
-                <input class="more__checkbox" type="checkbox" name="more__item" id="vitamins">
-                <label for="vitamins">Витамины</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <div class="container__form form-main__end">
-          <button class="form-main__button button" type="submit">Отправить заявку</button>
-          <p class="form-main__obligatory">* — Обязательные поля</p>
-        </div>
-      </form>
-      </section>
-    </main>
-
-    <footer class="footer footer__form">
-      <div class="container">
-        <div class="footer__description footer__description-form">
-          <h3 class="footer__heading section-text">Приглашаем <br> к сотрудничеству дилеров!</h3>
-          <p class="footer__adress">ул. Большая Конюшенная, д. 19/8 <span class="footer__spb">Санкт-Петербург</span></p>
-        </div>
       </div>
-      <div class="footer__map">
-        <picture class="footer__image">
-          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
-            alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </picture>
-        <iframe class="footer__interactive-map" width="320" height="362"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A6239bf29f712d3ad128248272ae43f2253159995af7dc7dab3d76821921abd75&amp;source=constructor"
-          frameborder="0"></iframe>
-      </div>
-      <div class="footer__contact">
-        <div class="footer__container container">
-          <a href="#" class="footer__logo">
-            <img src="img/logo-footer.svg" width="128" height="24" alt="cat energy">
-          </a>
-          <ul class="social">
-            <li>
-              <a href="#" class="social__button">
-                <span class="visually-hidden">Вконтакте</span>
-                <svg class="social__icon social__vk" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#social-vk"></use>
-                </svg>
-              </a>
+      <fieldset class="contact">
+        <div class="container__form">
+          <legend class="contact__heading section-title-new">Контактные данные (владельца кота)</legend>
+          <ul class="section-text-new">
+            <li class="contact__item">
+              <label class="contact__item-email" for="email">E-mail:*</label class="contact__item-tel">
+              <input id="email" type="email" name="contact-email" value="" placeholder="kuklachev@gmail.com" required>
             </li>
-            <li>
-              <a href="#" class="social__button">
-                <span class="visually-hidden">Инстаграм</span>
-                <svg class="social__icon social__insta" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#social-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="social__button">
-                <span class="visually-hidden">Фейсбук</span>
-                <svg class="social__icon social__fb" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#social-fb"></use>
-                </svg>
-              </a>
+            <li class="contact__item">
+              <label class="contact__item-tel" for="telefon">Телефон:*</label>
+              <input id="telefon" type="tel" name="contact-tel" value="" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
-          <div class="developer">
-            <a class="developer__academy" href="https://htmlacademy.ru/intensive/adaptives">
-              <p>HTML Academy</p>
-              <svg class="developer__logo-icon" width="40" height="44">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </div>
+      </fieldset>
+      <fieldset class="comment">
+        <div class="container__form">
+          <legend class="comment__heading section-title-new">Комментарий</legend>
+          <textarea class="comment__text section-text-new" name="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="more">
+        <div class="container__form">
+          <legend class="more__heading section-title-new">Дополнительно</legend>
+          <ul class="section-text-new">
+            <li class="more__item">
+              <input class="more__checkbox" type="checkbox" name="more__item" id="sweetener" checked>
+              <label for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="more__item">
+              <input class="more__checkbox" type="checkbox" name="more__item" id="water">
+              <label for="water">Питьевая вода</label>
+            </li>
+            <li class="more__item">
+              <input class="more__checkbox" type="checkbox" name="more__item" id="milk">
+              <label for="milk">Молоко</label>
+            </li>
+            <li class="more__item">
+              <input class="more__checkbox" type="checkbox" name="more__item" id="vitamins">
+              <label for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <div class="container__form form-main__end">
+        <button class="form-main__button button" type="submit">Отправить заявку</button>
+        <p class="form-main__obligatory">* — Обязательные поля</p>
+      </div>
+    </form>
+    </section>
+  </main>
+
+  <footer class="footer footer__form">
+    <div class="container">
+      <div class="footer__description footer__description-form">
+        <h3 class="footer__heading section-text">Приглашаем <br> к сотрудничеству дилеров!</h3>
+        <p class="footer__adress">ул. Большая Конюшенная, д. 19/8 <span class="footer__spb">Санкт-Петербург</span></p>
+      </div>
+    </div>
+    <div class="footer__map">
+      <picture class="footer__image">
+        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+        <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+          alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </picture>
+      <iframe class="footer__interactive-map" width="320" height="362"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A6239bf29f712d3ad128248272ae43f2253159995af7dc7dab3d76821921abd75&amp;source=constructor"
+        frameborder="0"></iframe>
+    </div>
+    <div class="footer__contact">
+      <div class="footer__container container">
+        <a href="#" class="footer__logo">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="cat energy">
+        </a>
+        <ul class="social">
+          <li>
+            <a href="#" class="social__button">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg class="social__icon social__vk" width="22" height="12">
+                <use xlink:href="img/sprite.svg#social-vk"></use>
               </svg>
             </a>
-          </div>
+          </li>
+          <li>
+            <a href="#" class="social__button">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="social__icon social__insta" width="16" height="16">
+                <use xlink:href="img/sprite.svg#social-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social__button">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="social__icon social__fb" width="10" height="19">
+                <use xlink:href="img/sprite.svg#social-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="developer">
+          <a class="developer__academy" href="https://htmlacademy.ru/intensive/adaptives">
+            <p>HTML Academy</p>
+            <svg class="developer__logo-icon" width="40" height="44">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 
 <script>

@@ -55,6 +55,24 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .form-main__heading {
+    margin-top: 68px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 
+  .form-main__profil {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0px;
+  }
+
+  .form-main__button {
+    width: 570px;
+    padding: 16px;
+    margin-bottom: 10px;
+    margin-right: 81px;
+  }
 }
