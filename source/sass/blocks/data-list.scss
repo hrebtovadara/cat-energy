@@ -20,11 +20,20 @@
   margin-bottom: 15px;
 }
 
-.data-list__item input {
+.data-list__item--input {
   padding: 12px;
   border: 1px solid $color-line;
   flex-grow: 1;
   margin-left: 15px;
+}
+
+.data-list__item--input:hover {
+  border: 1px solid $color-tableline;
+}
+
+.data-list__item--input:active,
+.data-list__item--input:focus {
+  border: 2px solid $color-gray;
 }
 
 .data-list__item input::placeholder {

@@ -55,6 +55,14 @@
   border-radius: 50%;
 }
 
+.filter-option__item:hover .filter-option__radio + label::before{
+  border: 1px solid $color-radio-hover;
+}
+
+.filter-option__item:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .filter-option {
     margin-bottom: 74px;

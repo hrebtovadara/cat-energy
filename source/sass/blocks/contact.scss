@@ -29,36 +29,65 @@
   position: relative;
 }
 
-.contact__item input {
+.contact__item--input {
   padding: 12px;
   border: 1px solid $color-line;
   flex-grow: 1;
   margin-left: 11px;
 }
 
-.contact__item input::placeholder {
+.contact__item--input::placeholder {
   color: $color-gray;
 }
 
-.contact__item-email::before {
+// .contact__item-email::before {
+//   position: absolute;
+//   content: " ";
+//   background-image: url("../../img/icon-mail.svg");
+//   width: 17px;
+//   height: 13px;
+//   top: 15px;
+//   right: 15px;
+//   fill: black;
+// }
+
+.contact__icon-mail {
   position: absolute;
-  content: " ";
-  background-image: url("../../img/icon-mail.svg");
   width: 17px;
   height: 13px;
-  top: 15px;
   right: 15px;
+  fill:#222222;
 }
 
-.contact__item-tel::before {
+.contact__item:active .contact__icon-mail {
+  fill: #68b738;
+}
+
+.contact__icon-phone {
   position: absolute;
-  content: " ";
-  background-image: url("../../img/icon-phone.svg");
   width: 20px;
   height: 20px;
-  top: 12px;
-  right: 14px;
+  right: 15px;
+  fill:#222222;
 }
+
+.contact__item:active .contact__icon-phone {
+  fill: #68b738;
+}
+
+.contact__item--input:hover {
+  border: 1px solid $color-tableline;
+}
+
+.contact__item--input:active,
+.contact__item--input:focus {
+  border: 2px solid $color-gray;
+}
+
+// .contact__item input:invalid {
+//   border: 2px solid $color-error;
+// }
+
 
 @media (min-width: $tablet-width) {
   .contact {
@@ -88,15 +117,6 @@
     flex-grow: 1;
     margin-left: 17px;
     margin-right: -6px;
-  }
-
-  .contact__item-email::before {
-    top: 19px;
-  }
-
-  .contact__item-tel::before {
-    top: 17px;
-    right: 12px;
   }
 }
 

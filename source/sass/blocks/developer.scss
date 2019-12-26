@@ -9,6 +9,15 @@
   margin-right: -5px;
 }
 
+.developer__academy:hover .developer__logo-icon {
+  fill: $color-green;
+}
+
+.developer:active {
+  fill: $color-green;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .developer__academy {
     min-width: 160px;

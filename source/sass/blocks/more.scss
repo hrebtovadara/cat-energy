@@ -63,6 +63,14 @@
   transform: rotate(45deg);
 }
 
+.more__item:hover .more__checkbox + label::before{
+  border: 1px solid $color-radio-hover;
+}
+
+.more__item:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .more {
     margin-top: 0;

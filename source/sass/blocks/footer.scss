@@ -81,6 +81,18 @@
   padding: 15px 0 12px;
 }
 
+.footer__logo:hover {
+  opacity: 0.8;
+}
+
+.footer__logo:hover {
+  opacity: 0.6;
+}
+
+.data-list__item--invalid {
+  border: 2px solid $color-error;
+}
+
 @media (min-width: $tablet-width) {
   .footer__logo img {
     max-width: 128px;

@@ -87,19 +87,20 @@
     line-height: 24px;
   }
 
-  .site-list__item {
-    &--active-white {
-      position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 10px;
-        left: 0;
-        height: 2px;
-        background: $color-white;
-      }
-    }
+  .site-list__item--active-white {
+    position: relative;
+  }
+
+  .site-list__item--active-white::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    height: 2px;
+    background: $color-white;
   }
 }
+
+

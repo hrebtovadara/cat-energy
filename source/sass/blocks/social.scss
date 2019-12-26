@@ -11,6 +11,15 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.social__icon:hover {
+  fill: $color-green;
+}
+
+.social__icon:active  {
+  fill: $color-green;
+  opacity: 0.3;
+}
+
 .social li {
   width: 30px;
   text-align: center;

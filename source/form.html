@@ -41,40 +41,42 @@
       <div class="form-main__profil container__form">
         <fieldset class="data-list">
           <!-- <div class="container__form"> -->
-            <legend class="data-list__title section-text-new">Заполните анкету и мы подберем <br> программу питания для
-              вашего кота</legend>
-            <ul class="section-text-new">
-              <li class="data-list__item">
-                <label for="name">Имя:*</label>
-                <input id="name" type="text" name="data-list-name" value="" placeholder="Барсик" required>
-              </li>
-              <li class="data-list__item">
-                <label for="weight">Вес (кг):*</label>
-                <input id="weight" type="number" name="data-list-weight" value="" placeholder="7" required>
-              </li>
-              <li class="data-list__item">
-                <label for="age">Возраст (лет):</label>
-                <input id="age" type="number" name="data-list-age" value="" placeholder="7">
-              </li>
-            </ul>
+          <legend class="data-list__title section-text-new">Заполните анкету и мы подберем <br> программу питания для
+            вашего кота</legend>
+          <ul class="section-text-new">
+            <li class="data-list__item">
+              <label for="name">Имя:*</label>
+              <input class="data-list__item--input" id="name" type="text" name="data-list" value="" placeholder="Барсик"
+                required>
+            </li>
+            <li class="data-list__item">
+              <label for="weight">Вес (кг):*</label>
+              <input class="data-list__item--input" id="weight" type="number" name="data-list" value="" placeholder="7"
+                required>
+            </li>
+            <li class="data-list__item">
+              <label for="age">Возраст (лет):</label>
+              <input class="data-list__item--input" id="age" type="number" name="data-list" value="" placeholder="7">
+            </li>
+          </ul>
           <!-- </div> -->
         </fieldset>
         <fieldset class="filter-option">
           <!-- <div class="container__form"> -->
-            <ul class="section-text-new">
-              <li class="filter-option__item">
-                <input class="filter-option__radio" type="radio" name="filter-option" id="slim" checked>
-                <label for="slim">Похудение</label>
-              </li>
-              <li class="filter-option__item">
-                <input class="filter-option__radio" type="radio" name="filter-option" id="pro">
-                <label for="pro">Набор массы</label>
-              </li>
-              <li class="filter-option__item">
-                <input class="filter-option__radio" type="radio" name="filter-option" id="help">
-                <label for="help">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
+          <ul class="section-text-new">
+            <li class="filter-option__item">
+              <input class="filter-option__radio" type="radio" name="filter-option" id="slim" checked>
+              <label for="slim">Похудение</label>
+            </li>
+            <li class="filter-option__item">
+              <input class="filter-option__radio" type="radio" name="filter-option" id="pro">
+              <label for="pro">Набор массы</label>
+            </li>
+            <li class="filter-option__item">
+              <input class="filter-option__radio" type="radio" name="filter-option" id="help">
+              <label for="help">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
           <!-- </div> -->
         </fieldset>
       </div>
@@ -84,11 +86,18 @@
           <ul class="section-text-new">
             <li class="contact__item">
               <label class="contact__item-email" for="email">E-mail:*</label class="contact__item-tel">
-              <input id="email" type="email" name="contact-email" value="" placeholder="kuklachev@gmail.com" required>
+              <input class="contact__item--input" id="email" type="email" name="contact" value=""
+                placeholder="kuklachev@gmail.com" required>
+              <svg width="17" height="13" class="contact__icon-mail" viewBox="0 0 17 13">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
             </li>
             <li class="contact__item">
               <label class="contact__item-tel" for="telefon">Телефон:*</label>
-              <input id="telefon" type="tel" name="contact-tel" value="" placeholder="8 (960) 900-60-90" required>
+              <input class="contact__item--input" id="telefon" type="tel" name="contact" value="" placeholder="8 (960) 900-60-90" required>
+              <svg width="20" height="20" class="contact__icon-phone" viewBox="0 0 20 20">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -208,6 +217,22 @@
       navMain.classList.remove('main-nav--opened');
     }
   });
+
+  var submitBtn = document.querySelector(".form-main__button");
+  submitBtn.addEventListener('click', function () {
+    var list = document.getElementsByTagName("input");
+
+    for (var i = 0; i < list.length; i++) {
+      var element = list[i];
+      if (element.hasAttribute("required") && element.value == "") {
+        element.classList.add("data-list__item--invalid");
+      } else {
+        element.classList.remove("data-list__item--invalid");
+      }
+    }
+  });
+
+
 </script>
 
 </html>
