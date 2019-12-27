@@ -5,3 +5,18 @@
   font-weight: normal;
   color: $color-black;
 }
+
+.section-title-new {
+  font-family: $font-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $color-black;
+}
+
+@media (min-width: $tablet-width) {
+  .section-title-new {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

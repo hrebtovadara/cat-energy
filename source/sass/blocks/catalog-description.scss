@@ -9,6 +9,11 @@
   justify-content: space-between;
 }
 
+.catalog-description__list td {
+  padding: 0;
+  padding-bottom: 1px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-description__list tr {
     border-bottom: 1px solid $color-tableline;
@@ -24,7 +29,13 @@
 
 @media (min-width: $desktop-width) {
   .catalog-description__list tr {
-    padding-top: 6px;
-    padding-bottom: 7px;
+    height: 31px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0 1px;
+  }
+
+  .catalog-description__list {
+    margin-bottom: 32px;
   }
 }

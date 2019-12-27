@@ -10,6 +10,15 @@
   padding: 11px;
   width: 100%;
   text-align: center;
+  border: none;
+}
+
+.button:hover {
+  background-color: $color-green-active;
+}
+
+.button:active {
+  color: rgba($color-white, 0.3);
 }
 
 @media (min-width: $tablet-width) {

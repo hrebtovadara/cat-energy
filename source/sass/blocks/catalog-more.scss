@@ -34,6 +34,14 @@
   color: $color-gray;
 }
 
+.catalog-more__all:hover {
+  background-color: $color-gray-button;
+}
+
+.catalog-more__all:active {
+  color: rgba($color-gray, 0.3);
+}
+
 .catalog-more__text {
   margin-top: 8px;
   margin-bottom: 20px;
@@ -72,6 +80,7 @@
     margin-top: 70px;
     margin-bottom: 0;
   }
+
   .catalog-more__heading::before {
     position: absolute;
     content: " ";
@@ -89,7 +98,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-more__heading {
-    margin-top: 72px;
+    margin-top: 71px;
     margin-bottom: 0;
   }
 
@@ -109,7 +118,7 @@
 
   .catalog-more__text {
     width: auto;
-    margin-top: 28px;
+    margin-top: 26px;
     margin-bottom: 86px;
   }
 }

@@ -6,11 +6,32 @@
 }
 
 .developer__logo-icon {
- margin-right: -5px;
+  margin-right: -5px;
+}
+
+.developer__academy:hover .developer__logo-icon {
+  fill: $color-green;
+}
+
+.developer:active {
+  fill: $color-green;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .developer__academy {
     min-width: 160px;
+    margin-bottom: 10px;
+  }
+
+  .developer__academy p {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developer__academy {
+    min-width: 160px;
+    margin-bottom: 0;
   }
 }

@@ -6,3 +6,19 @@
   font-weight: normal;
   color: $color-black;
 }
+
+.section-text-new {
+  font-family: $font-oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: $color-black;
+}
+
+@media (min-width: $tablet-width) {
+  .section-text-new {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
