@@ -1,5 +1,6 @@
 .contact {
-  margin-top: 29px;
+  margin: 0;
+  margin-top: 28px;
   position: relative;
 }
 
@@ -16,6 +17,7 @@
 }
 
 .contact__heading {
+  margin: 0;
   background-color: $color-white;
   width: 200px;
   margin-bottom: 34px;
@@ -29,69 +31,56 @@
   position: relative;
 }
 
-.contact__item--input {
+.contact__input {
   padding: 12px;
+  padding-left: 14px;
   border: 1px solid $color-line;
   flex-grow: 1;
   margin-left: 11px;
 }
 
-.contact__item--input::placeholder {
+.contact__input::placeholder {
   color: $color-gray;
 }
-
-// .contact__item-email::before {
-//   position: absolute;
-//   content: " ";
-//   background-image: url("../../img/icon-mail.svg");
-//   width: 17px;
-//   height: 13px;
-//   top: 15px;
-//   right: 15px;
-//   fill: black;
-// }
 
 .contact__icon-mail {
   position: absolute;
   width: 17px;
   height: 13px;
   right: 15px;
-  fill:#222222;
+  fill: $color-icon;
 }
 
-.contact__item:active .contact__icon-mail {
-  fill: #68b738;
-}
 
 .contact__icon-phone {
   position: absolute;
   width: 20px;
   height: 20px;
-  right: 15px;
-  fill:#222222;
+  right: 14px;
+  fill: $color-icon;
 }
 
 .contact__item:active .contact__icon-phone {
-  fill: #68b738;
+  fill: $color-green;
 }
 
-.contact__item--input:hover {
+.contact__input:hover {
   border: 1px solid $color-tableline;
 }
 
-.contact__item--input:active,
-.contact__item--input:focus {
+.contact__input:active,
+.contact__input:focus {
   border: 2px solid $color-gray;
 }
 
-// .contact__item input:invalid {
-//   border: 2px solid $color-error;
-// }
-
+.contact__input:focus + svg,
+.contact__input:active + svg {
+  fill: $color-green;
+}
 
 @media (min-width: $tablet-width) {
   .contact {
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 45px;
   }
 
@@ -108,15 +97,14 @@
   }
 
   .contact__item {
-   margin-bottom: 18px;
+    margin-bottom: 18px;
   }
 
   .contact__item input {
     padding: 14px 19px;
-    border: 1px solid $color-line;
     flex-grow: 1;
     margin-left: 17px;
-    margin-right: -6px;
+    margin-right: 0;
   }
 }
 
@@ -148,7 +136,7 @@
     max-width: 570px;
   }
 
-  .contact__item:nth-child(2n){
+  .contact__item:nth-child(2n) {
     margin-left: 77px;
   }
 

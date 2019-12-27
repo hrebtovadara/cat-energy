@@ -9,7 +9,8 @@
   list-style: none;
   background-color: $color-lightgray;
   padding: 20px;
-  margin-top: 21px;
+  padding-bottom: 18px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   min-height: 266px;
@@ -29,8 +30,8 @@
   content: " ";
   position: absolute;
 
-  top: 3px;
-  left: 1px;
+  top: 4px;
+  left: 2px;
 
   width: 50px;
   height: 50px;
@@ -45,8 +46,8 @@
   position: absolute;
   top: 2px;
   left: 10px;
-  width: 35px;
-  height: 49px;
+  width: 36px;
+  height: 53px;
   background-image: url("../../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
 }
@@ -54,8 +55,8 @@
 .type-list__heading-pro::after {
   content: " ";
   position: absolute;
-  top: 14px;
-  left: -8px;
+  top: 15px;
+  left: -7px;
   width: 67px;
   height: 28px;
   background-image: url("../../img/icon-cat-pro.svg");
@@ -64,8 +65,9 @@
 
 .type-list__text {
   padding-top: 16px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 22px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid $color-border-social;
 }
 
 .type-list__image {
@@ -80,7 +82,7 @@
 .type-list__button::after {
   content: " ";
   position: absolute;
-  top: 8px;
+  top: 7px;
   right: -35px;
 
   width: 24px;
@@ -93,7 +95,7 @@
   position: absolute;
   top: 9px;
   left: 96px;
-  fill: #3f4242;
+  fill: $color-arrow;
 }
 
 .type-list__button:hover::after {
@@ -147,7 +149,7 @@
   .type-list__arrow {
     top: 8px;
     left: 129px;
-    fill: #3f4242;
+    fill: $color-arrow;
   }
 
   .type-list__heading::before {

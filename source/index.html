@@ -46,7 +46,7 @@
             <source media="(min-width: 1440px)"
               srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
-            <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270">
+            <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="корм cat energy">
           </picture>
           <a class="program__button button" href="#"><span class="program__text">Подобрать программу</span></a>
         </div>
@@ -168,7 +168,7 @@
       </picture>
       <iframe class="footer__interactive-map" width="320" height="362"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A6239bf29f712d3ad128248272ae43f2253159995af7dc7dab3d76821921abd75&amp;source=constructor"
-        frameborder="0"></iframe>
+        ></iframe>
     </div>
     <div class="footer__contact">
       <div class="footer__container container">
@@ -212,24 +212,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
-
-<script>
-  var navMain = document.querySelector(".header__container");
-  var navToggle = document.querySelector(".main-nav__toggle");
-
-  navMain.classList.remove("main-nav--nojs");
-
-  navToggle.addEventListener("click", function () {
-    if (navMain.classList.contains("main-nav--closed")) {
-      navMain.classList.remove("main-nav--closed");
-      navMain.classList.add("main-nav--opened");
-    } else {
-      navMain.classList.add("main-nav--closed");
-      navMain.classList.remove("main-nav--opened");
-    }
-  });
-
-</script>
 
 </html>

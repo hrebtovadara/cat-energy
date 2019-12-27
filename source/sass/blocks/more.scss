@@ -1,4 +1,5 @@
 .more {
+  margin: 0;
   margin-top: 10px;
   position: relative;
   margin-bottom: 18px;
@@ -17,12 +18,13 @@
 }
 
 .more__heading {
+  margin: 0;
   background-color: $color-white;
-  padding-right: 20px;
+  padding-right: 22px;
   margin-bottom: 40px;
- }
+}
 
- .more__item input[type="checkbox"] {
+.more__item input[type="checkbox"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -41,17 +43,17 @@
   margin-bottom: 24px;
 }
 
-.more__checkbox+label::before {
+.more__checkbox + label::before {
   position: absolute;
   content: " ";
   height: 30px;
   width: 30px;
   top: -5px;
-  left: 0px;
+  left: 0;
   border: 1px solid $color-checkbox;
 }
 
-.more__checkbox:checked+label::after {
+.more__checkbox:checked + label::after {
   position: absolute;
   content: " ";
   top: -3px;
@@ -63,7 +65,7 @@
   transform: rotate(45deg);
 }
 
-.more__item:hover .more__checkbox + label::before{
+.more__item:hover .more__checkbox + label::before {
   border: 1px solid $color-radio-hover;
 }
 
@@ -74,7 +76,7 @@
 @media (min-width: $tablet-width) {
   .more {
     margin-top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .more::before {
@@ -86,6 +88,7 @@
     padding: 0 40px;
     margin-left: -40px;
     margin-bottom: 66px;
+    width: 292px;
   }
 
   .more ul {
@@ -101,14 +104,14 @@
     margin-bottom: 52px;
   }
 
-  .more__checkbox+label::before {
+  .more__checkbox + label::before {
     height: 40px;
     width: 40px;
     top: -10px;
-    left: 0px;
+    left: 0;
   }
 
-  .more__checkbox:checked+label::after {
+  .more__checkbox:checked + label::after {
     left: 15px;
   }
 }

@@ -36,18 +36,18 @@
     right: 18px;
     width: 24px;
     height: 24px;
-
   }
+
   .main-nav--opened .main-nav__toggle::before,
   .main-nav--opened .main-nav__toggle::after {
-      content: "";
-      position: absolute;
-      top: 10px;
-      left: 0;
-      width: 24px;
-      height: 2px;
-      background-color: $color-black;
-    }
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+  }
 
   .main-nav--opened .main-nav__toggle::before {
     transform: rotate(45deg);

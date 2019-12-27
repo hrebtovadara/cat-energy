@@ -21,5 +21,17 @@
 @media (min-width: $tablet-width) {
   .developer__academy {
     min-width: 160px;
+    margin-bottom: 10px;
+  }
+
+  .developer__academy p {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developer__academy {
+    min-width: 160px;
+    margin-bottom: 0;
   }
 }

@@ -3,7 +3,7 @@
   padding: 27px 20px 0;
   margin: 0;
   width: 320px;
-  margin-left: -20px;
+  margin-left: -22px;
 }
 
 .filter-option__item {
@@ -37,7 +37,7 @@
   content: "";
   position: absolute;
   left: -45px;
-  top: -5px;
+  top: -7px;
   width: 30px;
   height: 30px;
   border: 1px solid $color-radio;
@@ -47,7 +47,7 @@
 .filter-option__radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: -36px;
   width: 12px;
   height: 12px;
@@ -55,7 +55,7 @@
   border-radius: 50%;
 }
 
-.filter-option__item:hover .filter-option__radio + label::before{
+.filter-option__item:hover .filter-option__radio + label::before {
   border: 1px solid $color-radio-hover;
 }
 
@@ -71,7 +71,7 @@
   .filter-option ul {
     padding: 33px 20px 0;
     width: 630px;
-    margin-left: 0px;
+    margin-left: -2px;
   }
 
   .filter-option__item {
@@ -109,6 +109,4 @@
     position: relative;
     width: 300px;
   }
-
-
 }

@@ -1,7 +1,7 @@
 .example {
   background-color: $color-lightgray;
   margin-top: 34px;
-  height: 705px;
+  height: 704px;
 }
 
 .example__heading {
@@ -35,7 +35,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .example__text {
@@ -59,6 +59,7 @@
 .example__index {
   font-size: 24px;
   line-height: 24px;
+  margin-top: 20px;
 }
 
 .example__indicator {
@@ -69,11 +70,11 @@
   position: absolute;
   top: 34px;
   background-color: $color-lightgray;
-  padding: 0 13px;
+  padding: 0 12px;
+  margin-left: -1px;
 }
 
 .example__progress {
-  border: none;
   height: 14px;
   width: 84px;
   background-color: $color-white;
@@ -118,10 +119,6 @@
   position: static;
 }
 
-.example__cat-item {
-  position: static;
-}
-
 .example__cat-item--after {
   display: none;
 }
@@ -141,22 +138,11 @@
     position: absolute;
     content: " ";
     top: 618px;
-    // background-color: $color-lightgray;
-    background: linear-gradient( 90deg, $color-lightgray 50%, $color-gray-fon 50%);
+    background: linear-gradient(90deg, $color-lightgray 50%, $color-gray-fon 50%);
     height: 462px;
     width: 100%;
     z-index: -1;
   }
-
-  // .example__fon::after {
-  //   position: absolute;
-  //   content: " ";
-  //   top: 618px;
-  //   background-color: $color-gray-fon;
-  //   height: 462px;
-  //   width: 100%;
-  //   z-index: -1;
-  // }
 
   .example__heading {
     font-size: 60px;
@@ -204,6 +190,7 @@
   }
 
   .example__index {
+    margin-top: 26px;
     font-size: 30px;
     line-height: 38px;
   }
@@ -238,7 +225,6 @@
   }
 
   .example__cat {
-    margin-left: 0px;
     margin-bottom: 42px;
     position: relative;
     height: 520px;
@@ -279,12 +265,6 @@
     right: 2px;
   }
 
-
-  // .example__cat-one {
-  //   width: 677px;
-  //   height: 499px;
-  // }
-
   .example__progress {
     height: 6px;
     width: 428px;
@@ -298,19 +278,6 @@
   .example__progress::before {
     display: none;
   }
-
-  // .example__progress::before {
-  //   position: absolute;
-  //   content: " ";
-  //   background-color: $color-green;
-  //   height: 8px;
-  //   width: 8px;
-  //   border-radius: 50%;
-  //   top: 3px;
-  //   left: 5px;
-  //   border: 12px solid $color-white;
-  //   // outline: 1 solid $color-tableline;
-  // }
 
   .example__progress-range {
     display: block;
@@ -331,8 +298,8 @@
   }
 
   .example__progress-range:active {
-    box-shadow: 0 4px 5px rgba($color-black, 0.3);
-    border: 2px solid $color-green;
+    box-shadow: 0 4px 5px rgba($color-black, 0.3), 0 0 0 1px $color-green;
+    border-color: $color-green;
   }
 
   .example__progress-range::before {
@@ -395,14 +362,14 @@
   }
 
   .example__text {
-    margin-top: 72px;
+    margin-top: 71px;
     margin-bottom: 68px;
     width: 435px;
   }
 
   .example__expenses {
     text-align: right;
-    margin-top: 37px;
+    margin-top: 36px;
     margin-bottom: 0;
     width: 328px;
     display: flex;
@@ -412,6 +379,12 @@
   .example__fon::before {
     top: 218px;
     z-index: -2;
+  }
+
+  .example__indicator {
+    top: 48px;
+    padding: 0;
+    background-color: $color-lightgray;
   }
 
   .example__flex-container:nth-child(1)::after {
@@ -428,17 +401,12 @@
     margin-top: -188px;
     position: relative;
     margin-left: auto;
-    margin-right: auto;
     margin-right: -40px;
   }
 
   .example__cat-one {
     width: 677px;
     height: 499px;
-  }
-
-  .example__indicator {
-    background-color: $color-lightgray;
   }
 
   .example__cat-item {
@@ -470,6 +438,6 @@
   }
 
   .example__cat-item--after img {
-    right: 0px;
+    right: 0;
   }
 }

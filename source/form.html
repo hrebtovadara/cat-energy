@@ -40,29 +40,26 @@
     <form class="form-main">
       <div class="form-main__profil container__form">
         <fieldset class="data-list">
-          <!-- <div class="container__form"> -->
           <legend class="data-list__title section-text-new">Заполните анкету и мы подберем <br> программу питания для
             вашего кота</legend>
           <ul class="section-text-new">
             <li class="data-list__item">
               <label for="name">Имя:*</label>
-              <input class="data-list__item--input" id="name" type="text" name="data-list" value="" placeholder="Барсик"
+              <input class="data-list__input" id="name" type="text" name="data-list" value="" placeholder="Барсик"
                 required>
             </li>
             <li class="data-list__item">
-              <label for="weight">Вес (кг):*</label>
-              <input class="data-list__item--input" id="weight" type="number" name="data-list" value="" placeholder="7"
+              <label for="weight">Вес (кг):* </label>
+              <input class="data-list__input" id="weight" type="number" name="data-list" value="" placeholder="7"
                 required>
             </li>
             <li class="data-list__item">
               <label for="age">Возраст (лет):</label>
-              <input class="data-list__item--input" id="age" type="number" name="data-list" value="" placeholder="7">
+              <input class="data-list__input" id="age" type="number" name="data-list" value="" placeholder="7">
             </li>
           </ul>
-          <!-- </div> -->
         </fieldset>
         <fieldset class="filter-option">
-          <!-- <div class="container__form"> -->
           <ul class="section-text-new">
             <li class="filter-option__item">
               <input class="filter-option__radio" type="radio" name="filter-option" id="slim" checked>
@@ -77,16 +74,15 @@
               <label for="help">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
-          <!-- </div> -->
         </fieldset>
       </div>
       <fieldset class="contact">
         <div class="container__form">
-          <legend class="contact__heading section-title-new">Контактные данные (владельца кота)</legend>
+          <h2 class="contact__heading section-title-new">Контактные данные (владельца кота)</h2>
           <ul class="section-text-new">
             <li class="contact__item">
-              <label class="contact__item-email" for="email">E-mail:*</label class="contact__item-tel">
-              <input class="contact__item--input" id="email" type="email" name="contact" value=""
+              <label class="contact__item-email" for="email">E-mail:*</label>
+              <input class="contact__input" id="email" type="email" name="contact" value=""
                 placeholder="kuklachev@gmail.com" required>
               <svg width="17" height="13" class="contact__icon-mail" viewBox="0 0 17 13">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -94,7 +90,8 @@
             </li>
             <li class="contact__item">
               <label class="contact__item-tel" for="telefon">Телефон:*</label>
-              <input class="contact__item--input" id="telefon" type="tel" name="contact" value="" placeholder="8 (960) 900-60-90" required>
+              <input class="contact__input" id="telefon" type="tel" name="contact" value=""
+                placeholder="8 (960) 900-60-90" required>
               <svg width="20" height="20" class="contact__icon-phone" viewBox="0 0 20 20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
@@ -104,14 +101,14 @@
       </fieldset>
       <fieldset class="comment">
         <div class="container__form">
-          <legend class="comment__heading section-title-new">Комментарий</legend>
+          <h2 class="comment__heading section-title-new">Комментарий</h2>
           <textarea class="comment__text section-text-new" name="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="more">
         <div class="container__form">
-          <legend class="more__heading section-title-new">Дополнительно</legend>
+          <h2 class="more__heading section-title-new">Дополнительно</h2>
           <ul class="section-text-new">
             <li class="more__item">
               <input class="more__checkbox" type="checkbox" name="more__item" id="sweetener" checked>
@@ -137,7 +134,6 @@
         <p class="form-main__obligatory">* — Обязательные поля</p>
       </div>
     </form>
-    </section>
   </main>
 
   <footer class="footer footer__form">
@@ -156,7 +152,7 @@
       </picture>
       <iframe class="footer__interactive-map" width="320" height="362"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A6239bf29f712d3ad128248272ae43f2253159995af7dc7dab3d76821921abd75&amp;source=constructor"
-        frameborder="0"></iframe>
+        ></iframe>
     </div>
     <div class="footer__contact">
       <div class="footer__container container">
@@ -200,39 +196,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
-
-<script>
-  var navMain = document.querySelector('.header__container');
-  var navToggle = document.querySelector('.main-nav__toggle');
-
-  navMain.classList.remove('main-nav--nojs');
-
-  navToggle.addEventListener('click', function () {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-
-  var submitBtn = document.querySelector(".form-main__button");
-  submitBtn.addEventListener('click', function () {
-    var list = document.getElementsByTagName("input");
-
-    for (var i = 0; i < list.length; i++) {
-      var element = list[i];
-      if (element.hasAttribute("required") && element.value == "") {
-        element.classList.add("data-list__item--invalid");
-      } else {
-        element.classList.remove("data-list__item--invalid");
-      }
-    }
-  });
-
-
-</script>
 
 </html>

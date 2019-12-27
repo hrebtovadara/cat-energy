@@ -1,6 +1,7 @@
 .data-list {
+  margin: 0;
   margin-top: 26px;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .data-list li:last-child label {
@@ -10,7 +11,7 @@
 .data-list__title {
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .data-list__item {
@@ -20,19 +21,19 @@
   margin-bottom: 15px;
 }
 
-.data-list__item--input {
-  padding: 12px;
+.data-list__input {
+  padding: 12px 14px;
   border: 1px solid $color-line;
   flex-grow: 1;
   margin-left: 15px;
 }
 
-.data-list__item--input:hover {
+.data-list__input:hover {
   border: 1px solid $color-tableline;
 }
 
-.data-list__item--input:active,
-.data-list__item--input:focus {
+.data-list__input:active,
+.data-list__input:focus {
   border: 2px solid $color-gray;
 }
 
@@ -41,16 +42,15 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .data-list {
     margin-right: 0;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .data-list__title {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 36px;
+    margin-bottom: 15px;
     padding: 30px 0;
   }
 
@@ -58,7 +58,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .data-list li:last-child label {
@@ -66,14 +66,18 @@
   }
 
   .data-list__item input {
-    padding: 13px 20px;
+    padding: 13px 19px;
     flex-grow: 1;
     margin-left: 15px;
+  }
+
+  .data-list__item:nth-child(2) input {
+    margin-left: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .data-list ul{
+  .data-list ul {
     width: 570px;
     margin-right: 0;
   }
@@ -81,15 +85,11 @@
   .data-list {
     width: 570px;
     margin-right: 0;
+    margin-bottom: 54px;
   }
 
   .data-list__title {
     margin-bottom: 15px;
     padding: 30px 0;
-  }
-
-  .data-list {
-    margin-right: 0;
-    margin-bottom: 54px;
   }
 }
