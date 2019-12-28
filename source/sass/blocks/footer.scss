@@ -89,6 +89,15 @@
   opacity: 0.6;
 }
 
+
+.form-main--error + svg {
+  fill: $color-error;
+}
+
+.form-main--error {
+  border: 2px solid $color-error;
+}
+
 @media (min-width: $tablet-width) {
   .footer__logo img {
     max-width: 128px;
