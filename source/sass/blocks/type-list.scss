@@ -84,7 +84,6 @@
   position: absolute;
   top: 7px;
   right: -35px;
-
   width: 24px;
   height: 11px;
   background-image: url("../../img/icon-right-arrow-long.svg");
@@ -143,7 +142,8 @@
 
   .type-list__button::after {
     top: 10px;
-    right: -48px;
+    // right: -48px;
+    left: 130px;
   }
 
   .type-list__arrow {
@@ -260,6 +260,6 @@
   }
 
   .type-list__button::after {
-    top: 8px;
+    top: 10px;
   }
 }

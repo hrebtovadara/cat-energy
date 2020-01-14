@@ -31,6 +31,7 @@
 
 .footer__contact {
   background-color: $color-lightgray;
+  height: 236px;
 }
 
 .footer__container {
@@ -162,6 +163,10 @@
   .footer__image img {
     height: 396px;
   }
+
+  .footer__contact {
+    height: 150px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -192,7 +197,6 @@
 
   .footer__container {
     padding: 0 40px;
-    min-height: 160px;
   }
 
   .footer__location {
@@ -206,4 +210,5 @@
   .footer__form .footer__contact {
     margin-top: 5px;
   }
+
 }

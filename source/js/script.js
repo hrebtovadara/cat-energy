@@ -13,7 +13,7 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-var submitBtn = document.querySelector(".form-main__button");
+var submitBtn = document.querySelector(".form__button");
 if (submitBtn != null) {
   submitBtn.addEventListener("click", function () {
     var list = document.getElementsByTagName("input");
@@ -21,9 +21,9 @@ if (submitBtn != null) {
     for (var i = 0; i < list.length; i++) {
       var element = list[i];
       if (element.hasAttribute("required") && element.value == "") {
-        element.classList.add("form-main--error");
+        element.classList.add("form__input--error");
       } else {
-        element.classList.remove("form-main--error");
+        element.classList.remove("form__input--error");
       }
     }
   });

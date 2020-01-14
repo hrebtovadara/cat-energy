@@ -162,7 +162,7 @@
 }
 
 .form__fieldset--more {
- margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .form__fieldset--more .form__title{
@@ -214,6 +214,8 @@
   margin-bottom: 23px;
 }
 
+
+
 .form__text {
   font-size: 14px;
   line-height: 16px;
@@ -258,6 +260,26 @@ input:focus {
 input:focus + svg,
 input:active + svg {
   fill: $color-green;
+}
+
+.form__input--error {
+  border: 2px solid $color-error;
+}
+
+.form__input--error + svg {
+  fill: $color-error;
+}
+
+.form__item:hover .form__radio + label::before {
+  border: 1px solid $color-radio-hover;
+}
+
+.form__item:hover .form__checkbox + label::before {
+  border: 1px solid $color-radio-hover;
+}
+
+.form__item:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -346,10 +368,6 @@ input:active + svg {
     background-color: $color-green;
     border-radius: 50%;
   }
-
-  // .form__group--between {
-  //   margin-bottom: 32px;
-  // }
 
   .form__title {
     margin: 0;
@@ -476,7 +494,7 @@ input:active + svg {
 
 
 @media (min-width: $desktop-width) {
-   .form {
+  .form {
     padding-right: 0;
     padding-left: 0;
   }
@@ -488,6 +506,7 @@ input:active + svg {
   .form__group--between {
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 51px;
   }
 
   .form__list--row {
@@ -531,5 +550,52 @@ input:active + svg {
     margin-bottom: 33px;
     padding-left: 44px;
     position: relative;
+  }
+
+  .form__list--row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .form__fieldset--contact .form__item {
+    position: relative;
+    width: 570px;
+  }
+
+  .form__icon--mail, .form__icon--phone {
+    right: 19px;
+  }
+
+  .form__fieldset--contact {
+    margin-bottom: 0px;
+  }
+
+  .form__fieldset--comment {
+    margin-bottom: 69px;
+  }
+
+  .form__fieldset--more .form__item {
+    width: 245px;
+    margin: 0 40px 58px 40px;
+  }
+
+  .form__fieldset--more .form__list--row {
+    margin: 0 -40px 12px;
+  }
+
+  .form__button {
+    margin: 0;
+    width: 570px;
+    padding: 16px;
+  }
+
+  .form__text {
+    padding-left: 80px;
+  }
+
+  .form__group--button {
+    margin-bottom: 84px;
   }
 }
