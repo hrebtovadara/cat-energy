@@ -14,7 +14,82 @@
   padding: 12px 0;
 }
 
+.header__toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: $color-white;
+}
+
+@media (max-width: $mobile-width-only) {
+  .header--closed .main-nav__item {
+    display: none;
+  }
+
+  .header--closed .header__toggle::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 8px;
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+    box-shadow: 0 8px 0 0  $color-black, 0 16px 0 0  $color-black;
+  }
+
+  .header--opened .header__toggle {
+    top: 22px;
+    right: 18px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .header--opened .header__toggle::before,
+  .header--opened .header__toggle::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+  }
+
+  .header--opened .header__toggle::before {
+    transform: rotate(45deg);
+  }
+
+  .header--opened .header__toggle::after {
+    transform: rotate(-45deg);
+  }
+
+// -----------------------------------------------------------------------------
+  .header--nojs .header__toggle {
+    display: none;
+  }
+
+  .header--nojs .main-nav {
+    position: static;
+    min-height: 0;
+  }
+
+  .header--nojs .main-nav__item {
+    display: block;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
+  .header__toggle {
+    display: none;
+  }
+
   .header__container {
     flex-direction: row;
     justify-content: space-between;
@@ -45,17 +120,17 @@
     content: " ";
     top: 0;
     right: 0;
-    // width: 720px;
     width: 50%;
     height: 696px;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     z-index: -1;
+    background-color: $color-green-fon;
     background-size: cover;
   }
 
   @media (min-resolution: $retina-dppx) {
-    .action {
+    .header::before {
       background-image: url("../index-background-desktop@2x.jpg");
     }
   }

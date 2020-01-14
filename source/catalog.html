@@ -15,7 +15,7 @@
   </div>
   <header>
     <div class="container">
-      <div class="header__container  main-nav--closed main-nav--nojs">
+      <div class="header__container  header--closed header--nojs">
         <div class="header__logo">
           <a href="index.html" class="logo logo__catalog">
             <picture>
@@ -24,14 +24,14 @@
               <img src="img/logo-mobile.svg" width="190" height="38" alt="cat energy">
             </picture>
           </a>
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+          <button class="header__toggle" type="button"><span class="visually-hidden">Открыть
               меню</span></button>
         </div>
         <nav class="main-nav">
-          <ul class="main-nav__list site-list site-list__catalog">
-            <li class="site-list__item"><a class="section-text" href="index.html">Главная</a></li>
-            <li class="site-list__item"><a class="section-text site-list__item--active">Каталог продукции</a></li>
-            <li class="site-list__item"><a class="section-text" href="form.html">Подбор программы</a></li>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="section-text" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="section-text main-nav__item--active">Каталог продукции</a></li>
+            <li class="main-nav__item"><a class="section-text" href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
@@ -42,12 +42,14 @@
     <section class="catalog">
       <div class="container">
         <h1 class="catalog__heading section-title">Каталог продукции</h1>
-        <h2 class="visually-hidden">Каталог кормов</h2>
+        <h1 class="visually-hidden">Каталог кормов</h1>
         <ul class="catalog__list">
           <li class="catalog__item">
             <div class="catalog__container">
               <div class="catalog__table">
-                <h3 class="catalog__title section-text">Cat energy pro 500 г</h3>
+                <a href="card-product.html">
+                  <h3 class="catalog__title section-text">Cat energy pro 500 г</h3>
+                </a>
                 <table class="catalog-description__list">
                   <tr>
                     <td class="catalog-description__field">Объем</td>
@@ -63,20 +65,25 @@
                   </tr>
                 </table>
               </div>
-              <picture class="catalog__image">
-                <source media="(min-width:1440px)"
-                  srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-                <source media="(min-width:768px)"
-                  srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-                <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="корм cat energy">
-              </picture>
+              <a href="card-product.html">
+                <picture class="catalog__image">
+                  <source media="(min-width:1440px)"
+                    srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                  <source media="(min-width:768px)"
+                    srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                  <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x"
+                    alt="корм cat energy">
+                </picture>
+              </a>
             </div>
             <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
               <div class="catalog__table">
-                <h3 class="catalog__title section-text">Cat energy pro 1000 г</h3>
+                <a href="card-product.html">
+                  <h3 class="catalog__title section-text">Cat energy pro 1000 г</h3>
+                </a>
                 <table class="catalog-description__list">
                   <tr>
                     <td class="catalog-description__field">Объем</td>
@@ -92,20 +99,25 @@
                   </tr>
                 </table>
               </div>
-              <picture class="catalog__image">
-                <source media="(min-width:1440px)"
-                  srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
-                <source media="(min-width:768px)"
-                  srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-                <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="корм cat energy">
-              </picture>
+              <a href="card-product.html">
+                <picture class="catalog__image">
+                  <source media="(min-width:1440px)"
+                    srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                  <source media="(min-width:768px)"
+                    srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                  <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x"
+                    alt="корм cat energy">
+                </picture>
+              </a>
             </div>
             <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
               <div class="catalog__table">
-                <h3 class="catalog__title section-text">Cat energy pro 500 г</h3>
+                <a href="card-product.html">
+                  <h3 class="catalog__title section-text">Cat energy pro 500 г</h3>
+                </a>
                 <table class="catalog-description__list">
                   <tr>
                     <td class="catalog-description__field">Объем</td>
@@ -121,20 +133,25 @@
                   </tr>
                 </table>
               </div>
-              <picture class="catalog__image">
-                <source media="(min-width:1440px)"
-                  srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
-                <source media="(min-width:768px)"
-                  srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-                <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="корм cat energy">
-              </picture>
+              <a href="card-product.html">
+                <picture class="catalog__image">
+                  <source media="(min-width:1440px)"
+                    srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                  <source media="(min-width:768px)"
+                    srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                  <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x"
+                    alt="корм cat energy">
+                </picture>
+              </a>
             </div>
             <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
               <div class="catalog__table">
-                <h3 class="catalog__title section-text">Cat energy pro 1000 г</h3>
+                <a href="card-product.html">
+                  <h3 class="catalog__title section-text">Cat energy pro 1000 г</h3>
+                </a>
                 <table class="catalog-description__list">
                   <tr>
                     <td class="catalog-description__field">Объем</td>
@@ -150,19 +167,24 @@
                   </tr>
                 </table>
               </div>
-              <picture class="catalog__image">
-                <source media="(min-width:1440px)"
-                  srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
-                <source media="(min-width:768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-                <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="корм cat energy">
-              </picture>
+              <a href="card-product.html">
+                <picture class="catalog__image">
+                  <source media="(min-width:1440px)"
+                    srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                  <source media="(min-width:768px)"
+                    srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                  <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="корм cat energy">
+                </picture>
+              </a>
             </div>
             <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
               <div class="catalog__table">
-                <h3 class="catalog__title section-text">Cat energy slim 500 г</h3>
+                <a href="card-product.html">
+                  <h3 class="catalog__title section-text">Cat energy slim 500 г</h3>
+                </a>
                 <table class="catalog-description__list">
                   <tr>
                     <td class="catalog-description__field">Объем</td>
@@ -178,20 +200,25 @@
                   </tr>
                 </table>
               </div>
-              <picture class="catalog__image">
-                <source media="(min-width:1440px)"
-                  srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
-                <source media="(min-width:768px)"
-                  srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-                <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="корм cat energy">
-              </picture>
+              <a href="card-product.html">
+                <picture class="catalog__image">
+                  <source media="(min-width:1440px)"
+                    srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                  <source media="(min-width:768px)"
+                    srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                  <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x"
+                    alt="корм cat energy">
+                </picture>
+              </a>
             </div>
             <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
               <div class="catalog__table">
-                <h3 class="catalog__title section-text">Cat energy slim 1000 г</h3>
+                <a href="card-product.html">
+                  <h3 class="catalog__title section-text">Cat energy slim 1000 г</h3>
+                </a>
                 <table class="catalog-description__list">
                   <tr>
                     <td class="catalog-description__field">Объем</td>
@@ -207,20 +234,25 @@
                   </tr>
                 </table>
               </div>
-              <picture class="catalog__image">
-                <source media="(min-width:1440px)"
-                  srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
-                <source media="(min-width:768px)"
-                  srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-                <img src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="корм cat energy">
-              </picture>
+              <a href="card-product.html">
+                <picture class="catalog__image">
+                  <source media="(min-width:1440px)"
+                    srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                  <source media="(min-width:768px)"
+                    srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                  <img src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x"
+                    alt="корм cat energy">
+                </picture>
+              </a>
             </div>
             <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="catalog__container">
               <div class="catalog__table">
-                <h3 class="catalog__title section-text">Cat energy slim 500 г</h3>
+                <a href="card-product.html">
+                  <h3 class="catalog__title section-text">Cat energy slim 500 г</h3>
+                </a>
                 <table class="catalog-description__list">
                   <tr>
                     <td class="catalog-description__field">Объем</td>
@@ -236,13 +268,16 @@
                   </tr>
                 </table>
               </div>
-              <picture class="catalog__image">
-                <source media="(min-width:1440px)"
-                  srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
-                <source media="(min-width:768px)"
-                  srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-                <img src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="корм cat energy">
-              </picture>
+              <a href="card-product.html">
+                <picture class="catalog__image">
+                  <source media="(min-width:1440px)"
+                    srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                  <source media="(min-width:768px)"
+                    srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                  <img src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x"
+                    alt="корм cat energy">
+                </picture>
+              </a>
             </div>
             <a class="catalog__button button" href="order.html">Заказать</a>
           </li>
@@ -262,7 +297,7 @@
         <div class="additionally__flex-container">
           <ul class="additionally__list">
             <li class="additionally__item">
-              <div>
+              <div class="additionally__string">
                 <h3 class="additionally__title section-text">Сахарозаменитель</h3>
                 <table class="additionally__description">
                   <tr>
@@ -274,7 +309,7 @@
               <a class="additionally__button button" href="order.html">Заказать</a>
             </li>
             <li class="additionally__item">
-              <div>
+              <div class="additionally__string">
                 <h3 class="additionally__title section-text">Питьевая вода</h3>
                 <table class="additionally__description">
                   <tr>
@@ -286,7 +321,7 @@
               <a class="additionally__button button" href="order.html">Заказать</a>
             </li>
             <li class="additionally__item">
-              <div>
+              <div class="additionally__string">
                 <h3 class="additionally__title section-text">Молоко</h3>
                 <table class="additionally__description">
                   <tr>
@@ -298,7 +333,7 @@
               <a class="additionally__button button" href="order.html">Заказать</a>
             </li>
             <li class="additionally__item">
-              <div>
+              <div class="additionally__string">
                 <h3 class="additionally__title section-text">Витамины</h3>
                 <table class="additionally__description">
                   <tr>
@@ -377,6 +412,8 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.js"></script>
+
 </body>
 
 </html>

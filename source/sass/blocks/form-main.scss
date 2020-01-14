@@ -51,10 +51,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 708px;
-  }
-
   .form {
     padding-right: 40px;
     padding-left: 40px;
@@ -70,11 +66,7 @@
 }
 
 @media screen and (min-width: 1300px) {
-  .container {
-    max-width: 1220px;
-  }
-
-  .form {
+   .form {
     padding-right: 0;
     padding-left: 0;
   }

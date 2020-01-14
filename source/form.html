@@ -15,7 +15,7 @@
   </div>
   <header>
     <div class="container">
-      <div class="header__container main-nav--closed main-nav--nojs">
+      <div class="header__container header--closed header--nojs">
         <div class="header__logo">
           <a href="index.html" class="logo">
             <picture>
@@ -24,14 +24,14 @@
               <img src="img/logo-mobile.svg" width="190" height="38" alt="cat energy">
             </picture>
           </a>
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+          <button class="header__toggle" type="button"><span class="visually-hidden">Открыть
               меню</span></button>
         </div>
         <nav class="main-nav">
-          <ul class="main-nav__list site-list site-list__catalog">
-            <li class="site-list__item"><a class="section-text" href="index.html">Главная</a></li>
-            <li class="site-list__item"><a class="section-text" href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a class="section-text site-list__item--active">Подбор программы</a></li>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="section-text" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="section-text" href="catalog.html">Каталог продукции</a></li>
+            <li class="main-nav__item"><a class="section-text site-list__item--active">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
@@ -41,28 +41,28 @@
   <main>
     <div class="container">
       <h1 class="form__heading section-title">Подбор программы</h1>
-      <h2 class="form__fieldset__title section-text-new">Заполните анкету и мы подберем <br> программу питания для вашего кота</h2>
+      <h2 class="form__fieldset-title section-text-new">Заполните анкету и мы подберем <br> программу питания для вашего кота</h2>
       <form action="" class="form">
         <div class="form__group form__group--between">
-          <fieldset class="form__fieldset form__fieldset--2">
+          <fieldset class="form__fieldset form__fieldset--data-list">
             <legend class="visually-hidden">Информация о питомце</legend>
             <ul class="form__list section-text-new">
               <li class="form__item">
                 <label for="name" class="form__label section-text-new">Имя:*</label>
-                <input class="form__input" id="name" type="text" name="data-list" value="" placeholder="Барсик"
+                <input class="form__input section-text-new" id="name" type="text" name="data-list" value="" placeholder="Барсик"
                   required>
               </li>
               <li class="form__item">
                 <label for="weight" class="form__label section-text-new">Вес (кг):* </label>
-                <input class="form__input" id="weight" type="number" name="data-list" value="" placeholder="7" required>
+                <input class="form__input section-text-new" id="weight" type="number" name="data-list" value="" placeholder="7" required>
               </li>
               <li class="form__item">
                 <label for="age" class="form__label section-text-new">Возраст (лет):</label>
-                <input class="form__input" id="age" type="number" name="data-list" value="" placeholder="7">
+                <input class="form__input section-text-new" id="age" type="number" name="data-list" value="" placeholder="7">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--2">
+          <fieldset class="form__fieldset form__fieldset--filter">
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="form__list">
               <li class="form__item">
@@ -80,23 +80,23 @@
             </ul>
           </fieldset>
         </div>
-        <div class="form__group">
-          <fieldset class="form__fieldset">
-            <legend class="form__title section-title-new">Контактные данные (владельца кота)</legend>
+        <div class="form__group form__group--contact">
+          <fieldset class="form__fieldset form__fieldset--contact">
+            <legend class="form__title form__title--contact section-title-new">Контактные данные (владельца кота)</legend>
             <ul class="section-text-new form__list form__list--row">
               <li class="form__item">
                 <label class="form__label" for="email">E-mail:*</label>
                 <input class="form__input form__input--email section-text-new" id="email" type="email" name="contact" value=""
                   placeholder="kuklachev@gmail.com" required>
-                <svg width="17" height="13" class="contact__icon-mail" viewBox="0 0 17 13">
+                <svg width="17" height="13" class="form__icon--mail" viewBox="0 0 17 13">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
                 </svg>
               </li>
               <li class="form__item">
                 <label class="form__label" for="telefon">Телефон:*</label>
-                <input class="form__input form__input--email section-text-new" id="telefon" type="tel" name="contact" value=""
+                <input class="form__input form__input--tel section-text-new" id="telefon" type="tel" name="contact" value=""
                   placeholder="8 (960) 900-60-90" required>
-                <svg width="20" height="20" class="contact__icon-phone" viewBox="0 0 20 20">
+                <svg width="20" height="20" class="form__icon--phone" viewBox="0 0 20 20">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </li>
@@ -104,15 +104,15 @@
           </fieldset>
         </div>
         <div class="form__group">
-          <fieldset class="form__fieldset">
-            <legend class="form__title section-text-new">Комментарий</legend>
+          <fieldset class="form__fieldset form__fieldset--comment">
+            <legend class="form__title section-title-new">Комментарий</legend>
             <label for="comment" class="visually-hidden"></label>
             <textarea class="form__input form__input--textarea section-text-new" id="comment" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
         </div>
         <div class="form__group">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--more">
             <legend class="form__title section-title-new">Дополнительно</legend>
             <ul class="form__list form__list--row section-text-new">
               <li class="form__item">
@@ -133,7 +133,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__group">
+          <div class="form__group form__group--button">
             <button class="button form__button form__button--submit" type="submit">Отправить заявку</button>
             <small class="form__text">* — Обязательные поля</small>
           </div>
@@ -202,6 +202,8 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.js"></script>
+
 </body>
 
 </html>

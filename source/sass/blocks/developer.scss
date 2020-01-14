@@ -9,6 +9,10 @@
   margin-right: -5px;
 }
 
+.developer__logo-icon path {
+  fill: red;
+}
+
 .developer__academy:hover .developer__logo-icon {
   fill: $color-green;
 }
