@@ -31,7 +31,7 @@
 
 .footer__contact {
   background-color: $color-lightgray;
-  height: 236px;
+  min-height: 236px;
 }
 
 .footer__container {
@@ -109,12 +109,17 @@
     height: 395px;
   }
 
+
+  .footer__contact {
+    min-height: 150px;
+  }
+
   .footer__container {
-    min-height: 155px;
+    min-height: 40px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 55px 30px;
   }
 
   .footer iframe {
@@ -163,10 +168,6 @@
   .footer__image img {
     height: 396px;
   }
-
-  .footer__contact {
-    height: 150px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -193,10 +194,12 @@
     background-color: $color-white;
     padding: 50px 75px;
     margin: 0;
+    z-index: 3;
   }
 
   .footer__container {
-    padding: 0 40px;
+    min-height: 40px;
+    padding: 55px 40px;
   }
 
   .footer__location {
@@ -210,5 +213,4 @@
   .footer__form .footer__contact {
     margin-top: 5px;
   }
-
 }

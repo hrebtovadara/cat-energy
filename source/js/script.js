@@ -1,3 +1,7 @@
+pictureFill();
+
+svg4everybody();
+
 var navMain = document.querySelector(".header__container");
 var navToggle = document.querySelector(".header__toggle");
 
@@ -27,4 +31,8 @@ if (submitBtn != null) {
       }
     }
   });
+}
+
+function pictureFill() {
+  document.createElement( "picture" );
 }

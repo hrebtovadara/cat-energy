@@ -16,8 +16,6 @@
 .action::before {
   position: absolute;
   content: " ";
-  // mask-image: url("../../img/icon-gift.svg");
-  // background-color: $color-white;
   background-image: url("../../img/icon-gift.svg");
   background-repeat: no-repeat;
   width: 55px;

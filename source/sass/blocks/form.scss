@@ -16,11 +16,6 @@
   list-style: none;
 }
 
-.form__item {
-  display: flex;
-  align-items: center;
-}
-
 .form__label {
   flex-shrink: 0;
   margin-right: 16px;
@@ -40,11 +35,6 @@
   color: $color-gray;
 }
 
-.form__input--textarea {
-  min-height: 150px;
-  resize: none;
-}
-
 .form__heading {
   margin: 0;
   margin-top: 14px;
@@ -62,6 +52,8 @@
 }
 
 .form__item {
+  display: flex;
+  align-items: center;
   margin-bottom: 14px;
 }
 
@@ -84,7 +76,6 @@
   position: absolute;
   width: 1px;
   height: 1px;
-  // margin: -1px;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -103,7 +94,7 @@
 .form__radio + label::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 0;
   top: -7px;
   width: 30px;
   height: 30px;
@@ -126,18 +117,6 @@
   position: relative;
 }
 
-.form__group .form__title::before {
-  position: absolute;
-  content: " ";
-  height: 3px;
-  width: 100%;
-  top: 14px;
-  left: 50%;
-  background-color: $color-green;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
 .form__title {
   margin: 0;
   background-color: $color-white;
@@ -155,6 +134,8 @@
 
 .form__input--textarea {
   padding: 13px;
+  min-height: 150px;
+  resize: none;
 }
 
 .form__fieldset--comment {
@@ -165,7 +146,7 @@
   margin-bottom: 18px;
 }
 
-.form__fieldset--more .form__title{
+.form__fieldset--more .form__title {
   margin-bottom: 40px;
 }
 
@@ -214,8 +195,6 @@
   margin-bottom: 23px;
 }
 
-
-
 .form__text {
   font-size: 14px;
   line-height: 16px;
@@ -227,20 +206,25 @@
   width: 201px;
 }
 
+.form__item {
+  position: relative;
+}
+
 .form__icon--mail {
   position: absolute;
   width: 17px;
   height: 13px;
   right: 15px;
+  top: 15px;
   fill: $color-icon;
 }
-
 
 .form__icon--phone {
   position: absolute;
   width: 20px;
   height: 20px;
   right: 14px;
+  top: 13px;
   fill: $color-icon;
 }
 
@@ -248,17 +232,17 @@
   fill: $color-green;
 }
 
-input:hover {
+.form__input:hover {
   border: 1px solid $color-tableline;
 }
 
-input:active,
-input:focus {
+.form__input:active,
+.form__input:focus {
   border: 2px solid $color-gray;
 }
 
-input:focus + svg,
-input:active + svg {
+.form__input:focus + svg,
+.form__input:active + svg {
   fill: $color-green;
 }
 
@@ -287,10 +271,6 @@ input:active + svg {
     padding-right: 40px;
     padding-left: 40px;
   }
-
-  // .form__group:not(:last-child) {
-  //   margin-bottom: none;
-  // }
 
   .form__group--between {
     margin-bottom: 76px;
@@ -328,7 +308,7 @@ input:active + svg {
   .form__fieldset--filter {
     padding: 34px 43px;
     padding-bottom: 2px;
-    margin: 0px;
+    margin: 0;
     width: 100%;
     margin-bottom: 27px;
     border: 1px solid $color-line;
@@ -369,13 +349,6 @@ input:active + svg {
     border-radius: 50%;
   }
 
-  .form__title {
-    margin: 0;
-    background-color: $color-white;
-    padding-right: 20px;
-    margin-bottom: 34px;
-  }
-
   .form__group .form__title::before {
     position: absolute;
     content: " ";
@@ -406,16 +379,18 @@ input:active + svg {
   }
 
   .form__title {
+    margin: 0;
+    background-color: $color-white;
     margin-left: -40px;
     padding: 0 40px;
     margin-bottom: 74px;
   }
 
-  .form__fieldset--contact .form__label{
-    margin-right: 0px;
+  .form__fieldset--contact .form__label {
+    margin-right: 0;
   }
 
-  .form__fieldset--contact .form__input{
+  .form__fieldset--contact .form__input {
     margin-right: -4px;
     margin-left: 20px;
   }
@@ -467,7 +442,7 @@ input:active + svg {
   }
 
   .form__fieldset--more {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .form__group--button {
@@ -490,6 +465,12 @@ input:active + svg {
     padding-left: 62px;
     text-align: center;
   }
+
+  .form__icon--mail,
+  .form__icon--phone {
+    right: 15px;
+    top: 20px;
+  }
 }
 
 
@@ -509,17 +490,13 @@ input:active + svg {
     margin-bottom: 51px;
   }
 
-  .form__list--row {
-    flex-direction: row;
-  }
-
   .form__heading {
     margin-top: 68px;
     margin-bottom: 56px;
   }
 
   .form__fieldset-title {
-    padding: 0px;
+    padding: 0;
     margin-bottom: 64px;
   }
 
@@ -540,7 +517,7 @@ input:active + svg {
     flex-shrink: 0;
     flex-grow: 0;
     padding: 34px 43px 0;
-    margin: 0px;
+    margin: 0;
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
@@ -553,6 +530,7 @@ input:active + svg {
   }
 
   .form__list--row {
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -564,12 +542,14 @@ input:active + svg {
     width: 570px;
   }
 
-  .form__icon--mail, .form__icon--phone {
+  .form__icon--mail,
+  .form__icon--phone {
     right: 19px;
+    top: 19px;
   }
 
   .form__fieldset--contact {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .form__fieldset--comment {
@@ -598,4 +578,14 @@ input:active + svg {
   .form__group--button {
     margin-bottom: 84px;
   }
+
+  .form__fieldset--contact .form__input {
+    margin-right: 0px;
+    margin-left: 14px;
+  }
+
+  .form__fieldset--contact .form__input--email {
+    margin-left: 20px;
+  }
+
 }

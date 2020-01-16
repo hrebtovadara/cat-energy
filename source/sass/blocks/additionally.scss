@@ -54,6 +54,16 @@
   width: 285px;
 }
 
+.additionally__field {
+  text-align: left;
+  width: 80%;
+}
+
+.additionally__value {
+  text-align: right;
+  width: 57px;
+}
+
 .additionally__button {
   display: block;
   padding: 10px;
@@ -107,13 +117,17 @@
   .additionally__description tr {
     margin-top: 7px;
     font-size: 16px;
-    width: 240px;
     justify-content: flex-end;
+    width: 400px;
   }
 
   .additionally__value {
-    margin-left: 50px;
-    width: 46px;
+    margin-left: 45px;
+    width: 50px;
+    text-align: right;
+  }
+
+  .additionally__field {
     text-align: right;
   }
 

@@ -70,10 +70,9 @@
   height: 12px;
   position: absolute;
   top: 34px;
+  left: 15px;
   background-color: $color-lightgray;
   padding: 0 12px;
-  margin-left: -1px;
-  -ms-width: 4px;
 }
 
 .example__progress {
@@ -203,6 +202,7 @@
     width: 140px;
     top: 50px;
     padding: 0;
+    left: 11px;
   }
 
   .example__expenses {

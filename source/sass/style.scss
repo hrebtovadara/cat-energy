@@ -55,6 +55,7 @@ $retina-dppx: 1.5dppx;
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -73,6 +74,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 img {
@@ -95,11 +97,9 @@ a {
 @import "blocks/main-nav.scss";
 @import "blocks/main-index.scss";
 @import "blocks/program.scss";
-@import "blocks/types-food.scss";
 @import "blocks/type-list.scss";
 @import "blocks/description.scss";
 @import "blocks/example.scss";
-@import "blocks/catalog-main.scss";
 @import "blocks/catalog.scss";
 @import "blocks/catalog-more.scss";
 @import "blocks/catalog-description.scss";
