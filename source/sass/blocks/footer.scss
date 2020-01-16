@@ -168,6 +168,22 @@
   .footer__image img {
     height: 396px;
   }
+
+  .footer__catalog .footer__social {
+    margin-top: -8px;
+  }
+
+  .footer__catalog .developer {
+    margin-top: -4px;
+  }
+
+  .footer__form .footer__contact {
+    margin-top: -6px;
+  }
+
+  .footer__form .developer {
+    margin-top: 2px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -211,6 +227,10 @@
   }
 
   .footer__form .footer__contact {
-    margin-top: 5px;
+    margin-top: 0px;
+  }
+
+  .footer__form .developer {
+    margin-top: 3px;
   }
 }

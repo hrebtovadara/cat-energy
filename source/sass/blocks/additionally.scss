@@ -43,25 +43,20 @@
 }
 
 .additionally__description {
+  width: 100%;
   font-size: 14px;
   line-height: 14px;
-  margin: 10px -4px 11px;
-}
-
-.additionally__description tr {
-  display: flex;
-  justify-content: space-between;
-  width: 285px;
-}
+  margin: 10px 0 11px;
+ }
 
 .additionally__field {
   text-align: left;
-  width: 80%;
+  width: 50%;
 }
 
 .additionally__value {
   text-align: right;
-  width: 57px;
+  width: 50%;
 }
 
 .additionally__button {
@@ -104,31 +99,35 @@
   .additionally__item {
     border: 1px solid $color-tableline;
     border-bottom: none;
-    padding: 12px 37px 27px;
+    padding: 14px 37px 27px;
   }
 
   .additionally__string {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
+  }
+
+  .additionally__description {
+    margin: 15px 0 10px;
+    width: auto;
   }
 
   .additionally__description tr {
     margin-top: 7px;
     font-size: 16px;
-    justify-content: flex-end;
     width: 400px;
   }
 
   .additionally__value {
-    margin-left: 45px;
-    width: 50px;
+    width: 95px;
     text-align: right;
   }
 
   .additionally__field {
     text-align: right;
+    width: 192px;
   }
 
   .additionally__button {
@@ -163,7 +162,7 @@
     justify-content: space-between;
     align-items: center;
     width: 895px;
-    padding: 9px 0 8px;
+    padding: 15px 0 16px;
   }
 
   .additionally__string {
@@ -175,9 +174,11 @@
   }
 
   .additionally__description tr {
-    width: 287px;
-    justify-content: space-between;
     line-height: 20px;
+  }
+
+  .additionally__field {
+    text-align: left;
   }
 
   .additionally__item:nth-child(2) .additionally__value {
@@ -193,5 +194,10 @@
   .additionally__list {
     margin: 0;
     margin-bottom: 10px;
+  }
+
+  .additionally__description {
+    margin: 0;
+    padding-top: 5px;
   }
 }

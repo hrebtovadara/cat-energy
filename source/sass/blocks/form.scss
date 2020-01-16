@@ -237,7 +237,8 @@
 }
 
 .form__input:active,
-.form__input:focus {
+.form__input:focus,
+.form__input:disabled {
   border: 2px solid $color-gray;
 }
 
