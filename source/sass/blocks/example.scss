@@ -67,11 +67,12 @@
   line-height: 12px;
   text-align: center;
   width: 87px;
+  height: 12px;
   position: absolute;
   top: 34px;
+  left: 15px;
   background-color: $color-lightgray;
   padding: 0 12px;
-  margin-left: -1px;
 }
 
 .example__progress {
@@ -134,7 +135,7 @@
     position: relative;
   }
 
-  .example__fon::before {
+  .example__background::before {
     position: absolute;
     content: " ";
     top: 618px;
@@ -201,6 +202,7 @@
     width: 140px;
     top: 50px;
     padding: 0;
+    left: 11px;
   }
 
   .example__expenses {
@@ -376,7 +378,7 @@
     justify-content: space-between;
   }
 
-  .example__fon::before {
+  .example__background::before {
     top: 218px;
     z-index: -2;
   }

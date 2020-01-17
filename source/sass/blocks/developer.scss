@@ -7,13 +7,14 @@
 
 .developer__logo-icon {
   margin-right: -5px;
+  fill: $color-social-icon;
 }
 
 .developer__academy:hover .developer__logo-icon {
   fill: $color-green;
 }
 
-.developer:active {
+.developer__academy:active {
   fill: $color-green;
   opacity: 0.3;
 }
@@ -21,11 +22,15 @@
 @media (min-width: $tablet-width) {
   .developer__academy {
     min-width: 160px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .developer__academy p {
     margin: 0;
+  }
+
+  .developer__logo-icon {
+    margin-right: -5px;
   }
 }
 

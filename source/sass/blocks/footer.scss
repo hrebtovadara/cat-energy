@@ -31,6 +31,7 @@
 
 .footer__contact {
   background-color: $color-lightgray;
+  min-height: 236px;
 }
 
 .footer__container {
@@ -67,12 +68,12 @@
   height: 362px;
 }
 
-.footer__catalog {
+.footer--catalog {
   margin-top: 35px;
   background-color: $color-lightgray;
 }
 
-.footer__form {
+.footer--form {
   margin-top: 30px;
   background-color: $color-lightgray;
 }
@@ -89,6 +90,15 @@
   opacity: 0.6;
 }
 
+
+.form-main--error + svg {
+  fill: $color-error;
+}
+
+.form-main--error {
+  border: 2px solid $color-error;
+}
+
 @media (min-width: $tablet-width) {
   .footer__logo img {
     max-width: 128px;
@@ -99,12 +109,18 @@
     height: 395px;
   }
 
+
+  .footer__contact {
+    min-height: 150px;
+  }
+
   .footer__container {
-    min-height: 155px;
+    min-height: 40px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 55px 30px;
+    margin-top: -6px;
   }
 
   .footer iframe {
@@ -114,7 +130,7 @@
 
   .footer__heading {
     width: 160px;
-    line-height: 24px;
+    line-height: 25px;
     font-size: 20px;
     margin-bottom: 25px;
   }
@@ -138,7 +154,7 @@
     padding: 38px 40px;
   }
 
-  .footer__catalog {
+  .footer--catalog {
     margin-top: 75px;
   }
 
@@ -152,6 +168,14 @@
 
   .footer__image img {
     height: 396px;
+  }
+
+  .footer--catalog .footer__social {
+    margin-top: -2px;
+  }
+
+  .footer--form .developer {
+    margin-top: 2px;
   }
 }
 
@@ -179,11 +203,12 @@
     background-color: $color-white;
     padding: 50px 75px;
     margin: 0;
+    z-index: 3;
   }
 
   .footer__container {
-    padding: 0 40px;
-    min-height: 160px;
+    min-height: 40px;
+    padding: 55px 40px;
   }
 
   .footer__location {
@@ -194,7 +219,23 @@
     height: 400px;
   }
 
-  .footer__form .footer__contact {
+  .footer--form .footer__container {
+    margin-top: 2px;
+  }
+
+  .footer--form .developer {
+    margin-top: 0;
+  }
+
+  .footer--catalog {
+    margin-top: 77px;
+  }
+
+  .footer--catalog .footer__container {
     margin-top: 5px;
+  }
+
+  .footer--index .footer__container {
+    margin-top: 0;
   }
 }

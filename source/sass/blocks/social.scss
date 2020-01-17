@@ -11,6 +11,10 @@
   border-bottom: 1px solid $color-border-social;
 }
 
+.social__icon {
+  fill: $color-social-icon;
+}
+
 .social__icon:hover {
   fill: $color-green;
 }
@@ -23,10 +27,6 @@
 .social li {
   width: 30px;
   text-align: center;
-}
-
-.social__icon {
-  fill: $color-social-icon;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,17 +44,22 @@
     margin-right: 136px;
   }
 
-  .social__vk {
+  .social__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social__icon--vk {
     width: 30px;
     height: 16px;
   }
 
-  .social__insta {
+  .social__icon--insta {
     width: 23px;
     height: 23px;
   }
 
-  .social__fb {
+  .social__icon--fb {
     width: 14px;
     height: 28px;
   }

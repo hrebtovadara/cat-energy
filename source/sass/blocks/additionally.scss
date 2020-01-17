@@ -43,20 +43,30 @@
 }
 
 .additionally__description {
+  width: 100%;
   font-size: 14px;
   line-height: 14px;
-  margin: 10px -4px 11px;
+  margin: 10px 0 11px;
+  margin-left: -4px;
 }
 
-.additionally__description tr {
-  display: flex;
-  justify-content: space-between;
-  width: 285px;
+.additionally__field {
+  text-align: left;
+  width: 50%;
+}
+
+.additionally__value {
+  text-align: right;
+  width: 50%;
 }
 
 .additionally__button {
   display: block;
   padding: 10px;
+}
+
+.additionally__string {
+  margin-right: -8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -94,20 +104,36 @@
   .additionally__item {
     border: 1px solid $color-tableline;
     border-bottom: none;
-    padding: 12px 38px 27px;
+    padding: 14px 37px 27px;
   }
 
-  .additionally__item div {
+  .additionally__string {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
+    margin-right: -5px;
+  }
+
+  .additionally__description {
+    margin: 15px 0 10px;
+    width: auto;
   }
 
   .additionally__description tr {
     margin-top: 7px;
     font-size: 16px;
-    width: 227px;
+    width: 400px;
+  }
+
+  .additionally__value {
+    width: 95px;
+    text-align: right;
+  }
+
+  .additionally__field {
+    text-align: right;
+    width: 192px;
   }
 
   .additionally__button {
@@ -129,7 +155,7 @@
   }
 
   .additionally__heading {
-    margin-top: 77px;
+    margin-top: 76px;
     margin-bottom: 80px;
     margin-left: -39px;
     padding-left: 39px;
@@ -142,10 +168,10 @@
     justify-content: space-between;
     align-items: center;
     width: 895px;
-    padding: 11px 0 12px;
+    padding: 15px 0 16px;
   }
 
-  .additionally__item div {
+  .additionally__string {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,11 +180,11 @@
   }
 
   .additionally__description tr {
-    width: 287px;
+    line-height: 20px;
   }
 
-  .additionally__item:nth-child(2) .additionally__value {
-    margin-right: 6px;
+  .additionally__field {
+    text-align: left;
   }
 
   .additionally__button {
@@ -170,5 +196,15 @@
   .additionally__list {
     margin: 0;
     margin-bottom: 10px;
+  }
+
+  .additionally__description {
+    margin: 0;
+    padding-top: 5px;
+    margin-right: -6px;
+  }
+
+  .additionally__item:nth-child(2) .additionally__value {
+    padding-right: 10px;
   }
 }
