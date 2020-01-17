@@ -68,12 +68,12 @@
   height: 362px;
 }
 
-.footer__catalog {
+.footer--catalog {
   margin-top: 35px;
   background-color: $color-lightgray;
 }
 
-.footer__form {
+.footer--form {
   margin-top: 30px;
   background-color: $color-lightgray;
 }
@@ -120,6 +120,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 55px 30px;
+    margin-top: -6px;
   }
 
   .footer iframe {
@@ -129,7 +130,7 @@
 
   .footer__heading {
     width: 160px;
-    line-height: 24px;
+    line-height: 25px;
     font-size: 20px;
     margin-bottom: 25px;
   }
@@ -153,7 +154,7 @@
     padding: 38px 40px;
   }
 
-  .footer__catalog {
+  .footer--catalog {
     margin-top: 75px;
   }
 
@@ -169,19 +170,11 @@
     height: 396px;
   }
 
-  .footer__catalog .footer__social {
-    margin-top: -8px;
+  .footer--catalog .footer__social {
+    margin-top: -2px;
   }
 
-  .footer__catalog .developer {
-    margin-top: -4px;
-  }
-
-  .footer__form .footer__contact {
-    margin-top: -6px;
-  }
-
-  .footer__form .developer {
+  .footer--form .developer {
     margin-top: 2px;
   }
 }
@@ -226,11 +219,23 @@
     height: 400px;
   }
 
-  .footer__form .footer__contact {
-    margin-top: 0px;
+  .footer--form .footer__container {
+    margin-top: 2px;
   }
 
-  .footer__form .developer {
-    margin-top: 3px;
+  .footer--form .developer {
+    margin-top: 0;
+  }
+
+  .footer--catalog {
+    margin-top: 77px;
+  }
+
+  .footer--catalog .footer__container {
+    margin-top: 5px;
+  }
+
+  .footer--index .footer__container {
+    margin-top: 0;
   }
 }

@@ -55,6 +55,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+  position: relative;
 }
 
 .form__fieldset--filter {
@@ -206,10 +207,6 @@
   width: 201px;
 }
 
-.form__item {
-  position: relative;
-}
-
 .form__icon--mail {
   position: absolute;
   width: 17px;
@@ -263,7 +260,12 @@
   border: 1px solid $color-radio-hover;
 }
 
-.form__item:active {
+.form__radio + label:active,
+.form__radio:active + label::before,
+.form__radio:active + label::after,
+.form__checkbox + label:active,
+.form__checkbox:active + label::before,
+.form__checkbox:active + label::after {
   opacity: 0.3;
 }
 
@@ -581,12 +583,11 @@
   }
 
   .form__fieldset--contact .form__input {
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 14px;
   }
 
   .form__fieldset--contact .form__input--email {
     margin-left: 20px;
   }
-
 }

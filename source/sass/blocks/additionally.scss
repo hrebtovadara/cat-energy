@@ -47,7 +47,8 @@
   font-size: 14px;
   line-height: 14px;
   margin: 10px 0 11px;
- }
+  margin-left: -4px;
+}
 
 .additionally__field {
   text-align: left;
@@ -62,6 +63,10 @@
 .additionally__button {
   display: block;
   padding: 10px;
+}
+
+.additionally__string {
+  margin-right: -8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -107,6 +112,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
+    margin-right: -5px;
   }
 
   .additionally__description {
@@ -149,7 +155,7 @@
   }
 
   .additionally__heading {
-    margin-top: 77px;
+    margin-top: 76px;
     margin-bottom: 80px;
     margin-left: -39px;
     padding-left: 39px;
@@ -181,10 +187,6 @@
     text-align: left;
   }
 
-  .additionally__item:nth-child(2) .additionally__value {
-    margin-right: 7px;
-  }
-
   .additionally__button {
     width: 245px;
     height: 40px;
@@ -199,5 +201,10 @@
   .additionally__description {
     margin: 0;
     padding-top: 5px;
+    margin-right: -6px;
+  }
+
+  .additionally__item:nth-child(2) .additionally__value {
+    padding-right: 10px;
   }
 }
