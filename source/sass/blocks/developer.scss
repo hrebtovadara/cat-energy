@@ -14,8 +14,12 @@
   fill: $color-green;
 }
 
-.developer__academy:active {
+.developer__academy p:active + svg {
   fill: $color-green;
+  opacity: 0.3;
+}
+
+.developer__academy p:active {
   opacity: 0.3;
 }
 
