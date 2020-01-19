@@ -58,18 +58,26 @@
 @media (min-resolution: $retina-dppx) {
   .description__image--leaf .description__text::before {
     background-image: url("../../img/advantage-leaf@2x.png");
+    background-size: contain;
+    background-position: center;
   }
 
   .description__image--powder .description__text::before {
     background-image: url("../../img/advantage-powder@2x.png");
+    background-size: contain;
+    background-position: center;
   }
 
   .description__image--dining .description__text::before {
     background-image: url("../../img/advantage-dining@2x.png");
+    background-size: contain;
+    background-position: center;
   }
 
   .description__image--clock .description__text::before {
     background-image: url("../../img/advantage-clock@2x.png");
+    background-size: contain;
+    background-position: center;
   }
 }
 
