@@ -14,12 +14,12 @@
   fill: $color-green;
 }
 
-.developer__academy p:active + svg {
+.developer__academy:active .developer__logo-icon {
   fill: $color-green;
   opacity: 0.3;
 }
 
-.developer__academy p:active {
+.developer__academy:active p {
   opacity: 0.3;
 }
 
